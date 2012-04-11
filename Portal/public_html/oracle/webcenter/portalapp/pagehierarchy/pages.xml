@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<pagesDef xmlns="http://xmlns.oracle.com/webcenter/page"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://xmlns.oracle.com/webcenter/page/pagesDef.xsd">
+  <pageDef contentMRef="/oracle/webcenter/portalapp/pages/home.jspx"
+           hidden="false" shared="false" hasSubPages="false" id="home"/>
+</pagesDef>

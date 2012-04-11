@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:wsrp-types="urn:oasis:names:tc:wsrp:v1:types"
+        xmlns:tns="http://xmlns.oracle.com/portal/wsrp/v1"
+        targetNamespace="http://xmlns.oracle.com/portal/wsrp/v1" 
+        elementFormDefault="qualified">
+              
+  <import namespace="urn:oasis:names:tc:wsrp:v1:types" schemaLocation="wsrp_v1_types.xsd"/>
+          
+  <element name="GenericExtension" type="wsrp-types:NamedStringArray"/>
+  
+</schema>

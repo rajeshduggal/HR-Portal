@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.60.13" id="DataBindings" SeparateXMLFiles="false"
+             Package="devguide.portal" ClientType="Generic"
+             PageMapClass="oracle.jbo.uicli.mom.DynamicPageMapImpl"
+             BasePageDefPackageName="pageDefs">
+  <pageMap>
+    <page path="/oracle/webcenter/portalapp/pages/navigation-renderer.jspx"
+          usageId="portal_navigation_rendererPageDef"/>
+    <page path="/oracle/webcenter/portalapp/pages/home.jspx"
+          usageId="portal_homePageDef"/>
+    <page path="/oracle/webcenter/portalapp/pages/login.jspx"
+          usageId="portal_loginPageDef"/>
+    <page path="/oracle/webcenter/portalapp/pages/error.jspx"
+          usageId="portal_errorPageDef"/>
+    <page path="/oracle/webcenter/portalapp/pagetemplates/pageTemplate_globe.jspx"
+          usageId="portal_pageTemplate_globePageDef"/>
+    <page path="/oracle/webcenter/portalapp/pagetemplates/pageTemplate_swooshy.jspx"
+          usageId="portal_pageTemplate_swooshyPageDef"/>
+    <page path="/oracle/webcenter/portalapp/pagetemplates/otn-dev-days-template.jspx"
+          usageId="portal_otn_dev_days_templatePageDef"/>
+  </pageMap>
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/portlet/bindings"
+             className="oracle.adf.model.portlet.binding.PortletBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adfdtinternal.view.faces.portlet.PortletDefinitionDTFactory"/>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageDefinitionUsages>
+    <page id="portal_navigation_rendererPageDef"
+          path="oracle.webcenter.portalapp.pages.navigation_rendererPageDef"/>
+    <page id="portal_homePageDef"
+          path="oracle.webcenter.portalapp.pages.homePageDef"/>
+    <page id="portal_loginPageDef"
+          path="oracle.webcenter.portalapp.pages.loginPageDef"/>
+    <page id="portal_errorPageDef"
+          path="oracle.webcenter.portalapp.pages.errorPageDef"/>
+    <page id="portal_pageTemplate_globePageDef"
+          path="oracle.webcenter.portalapp.pagetemplates.pageTemplate_globePageDef"/>
+    <page id="portal_pageTemplate_swooshyPageDef"
+          path="oracle.webcenter.portalapp.pagetemplates.pageTemplate_swooshyPageDef"/>
+    <page id="portal_otn_dev_days_templatePageDef"
+          path="oracle.webcenter.portalapp.pagetemplates.otn_dev_days_templatePageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages/>
+</Application>

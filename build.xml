@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<project name="Portal" default="all" basedir=".">
+  <!-- initialize properties for use by the build -->
+  <property environment="env"/>
+  <property file="build.properties"/>
+  <tstamp/>
+
+  <!-- define the ojdeploy ant task -->
+  <taskdef name="ojdeploy"
+           classname="oracle.jdeveloper.deploy.ant.OJDeployAntTask"
+           uri="oraclelib:OJDeployAntTask"
+           classpath="${oracle.jdeveloper.ant.library}"/>
+
+  <target name="all" depends="deploy"/>
+
+  <target name="clean">
+    <delete includeemptydirs="true">
+      <fileset dir="${oracle.jdeveloper.workspace.dir}" includes="**/deploy/**/*"/>
+      <fileset dir="${oracle.jdeveloper.workspace.dir}" includes="**/classes/**/*"/>
+    </delete>  
+  </target>
+
+  <target name="deploy">
+    <ora:ojdeploy xmlns:ora="oraclelib:OJDeployAntTask"
+                  executable="${oracle.jdeveloper.ojdeploy.path}"
+                  ora:buildscript="${oracle.jdeveloper.deploy.dir}/ojdeploy-build.xml"
+                  ora:statuslog="${oracle.jdeveloper.deploy.dir}/ojdeploy-statuslog.xml">
+      <ora:deploy>
+        <ora:parameter name="workspace"
+                       value="${oracle.jdeveloper.workspace.path}"/>
+        <ora:parameter name="profile"
+                       value="${oracle.jdeveloper.deploy.profile.name}"/>
+      </ora:deploy>
+    </ora:ojdeploy>
+  </target>
+</project>

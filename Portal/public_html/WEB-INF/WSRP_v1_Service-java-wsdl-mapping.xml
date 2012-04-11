@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java-wsdl-mapping xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+  http://www.ibm.com/webservices/xsd/j2ee_jaxrpc_mapping_1_1.xsd"
+  version="1.1">
+
+    <package-mapping>
+        <package-type>oracle.portlet.wsrp.v1.soap</package-type>
+        <namespaceURI>urn:oasis:names:tc:wsrp:v1:wsdl</namespaceURI>
+    </package-mapping>
+    <package-mapping>
+        <package-type>oracle.portlet.wsrp.v1.soap</package-type>
+        <namespaceURI>urn:oasis:names:tc:wsrp:v1:types</namespaceURI>
+    </package-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;getMarkup</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;getPortletProperties</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;releaseSessions</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;modifyRegistration</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;setPortletProperties</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;performBlockingInteraction</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;destroyPortlets</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;initCookie</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;getPortletDescription</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;getPortletPropertyDescription</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;clonePortlet</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}&gt;getServiceDescription</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}OperationFailed</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InvalidRegistration</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InvalidCookie</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}MissingParameters</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InvalidSession</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InvalidUserCategory</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InconsistentParameters</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}UnsupportedWindowState</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}InvalidHandle</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}UnsupportedMode</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}UnsupportedMimeType</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}AccessDenied</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}UnsupportedLocale</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <java-xml-type-mapping>
+        <java-type>javax.xml.soap.SOAPElement</java-type>
+        <anonymous-type-qname>{urn:oasis:names:tc:wsrp:v1:types}PortletStateChangeRequired</anonymous-type-qname>
+        <qname-scope>complexType</qname-scope>
+    </java-xml-type-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.OperationFailed</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:OperationFailed</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InvalidUserCategory</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InvalidUserCategory</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InconsistentParameters</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InconsistentParameters</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InvalidRegistration</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InvalidRegistration</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.MissingParameters</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:MissingParameters</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.AccessDenied</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:AccessDenied</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.UnsupportedMode</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:UnsupportedMode</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.PortletStateChangeRequired</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:PortletStateChangeRequired</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InvalidCookie</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InvalidCookie</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InvalidHandle</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InvalidHandle</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.UnsupportedMimeType</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:UnsupportedMimeType</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.UnsupportedLocale</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:UnsupportedLocale</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.UnsupportedWindowState</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:UnsupportedWindowState</wsdl-message>
+    </exception-mapping>
+
+    <exception-mapping>
+        <exception-type>oracle.portlet.wsrp.v1.soap.InvalidSession</exception-type>
+        <wsdl-message xmlns:exMsg="urn:oasis:names:tc:wsrp:v1:intf">exMsg:InvalidSession</wsdl-message>
+    </exception-mapping>
+
+    <service-interface-mapping>
+        <service-interface>oracle.portlet.wsrp.v1.soap.WSRP_v1_Service</service-interface>
+        <wsdl-service-name xmlns:serviceNS="urn:oasis:names:tc:wsrp:v1:wsdl">serviceNS:WSRP_v1_Service</wsdl-service-name>
+        <port-mapping>
+            <port-name>WSRPServiceDescriptionService</port-name>
+            <java-port-name>WSRPServiceDescriptionService</java-port-name>
+        </port-mapping>
+        <port-mapping>
+            <port-name>WSRPBaseService</port-name>
+            <java-port-name>WSRPBaseService</java-port-name>
+        </port-mapping>
+        <port-mapping>
+            <port-name>WSRPPortletManagementService</port-name>
+            <java-port-name>WSRPPortletManagementService</java-port-name>
+        </port-mapping>
+        <port-mapping>
+            <port-name>WSRPRegistrationService</port-name>
+            <java-port-name>WSRPRegistrationService</java-port-name>
+        </port-mapping>
+    </service-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>oracle.portlet.wsrp.v1.soap.WSRP_v1_ServiceDescription_PortType</service-endpoint-interface>
+        <wsdl-port-type xmlns:portTypeNS="urn:oasis:names:tc:wsrp:v1:intf">portTypeNS:WSRP_v1_ServiceDescription_PortType</wsdl-port-type>
+        <wsdl-binding xmlns:bindingNS="urn:oasis:names:tc:wsrp:v1:bind">bindingNS:WSRP_v1_ServiceDescription_Binding_SOAP</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getServiceDescription</java-method-name>
+            <wsdl-operation>getServiceDescription</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getServiceDescription</wsdl-message>
+                    <wsdl-message-part-name>getServiceDescription</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getServiceDescriptionResponse</wsdl-message>
+                <wsdl-message-part-name>getServiceDescriptionResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>oracle.portlet.wsrp.v1.soap.WSRP_v1_Markup_PortType</service-endpoint-interface>
+        <wsdl-port-type xmlns:portTypeNS="urn:oasis:names:tc:wsrp:v1:intf">portTypeNS:WSRP_v1_Markup_PortType</wsdl-port-type>
+        <wsdl-binding xmlns:bindingNS="urn:oasis:names:tc:wsrp:v1:bind">bindingNS:WSRP_v1_Markup_Binding_SOAP</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getMarkup</java-method-name>
+            <wsdl-operation>getMarkup</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getMarkup</wsdl-message>
+                    <wsdl-message-part-name>getMarkup</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getMarkupResponse</wsdl-message>
+                <wsdl-message-part-name>getMarkupResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>performBlockingInteraction</java-method-name>
+            <wsdl-operation>performBlockingInteraction</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:performBlockingInteraction</wsdl-message>
+                    <wsdl-message-part-name>performBlockingInteraction</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:performBlockingInteractionResponse</wsdl-message>
+                <wsdl-message-part-name>performBlockingInteractionResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>releaseSessions</java-method-name>
+            <wsdl-operation>releaseSessions</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:releaseSessions</wsdl-message>
+                    <wsdl-message-part-name>releaseSessions</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:releaseSessionsResponse</wsdl-message>
+                <wsdl-message-part-name>releaseSessionsResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>initCookie</java-method-name>
+            <wsdl-operation>initCookie</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:initCookie</wsdl-message>
+                    <wsdl-message-part-name>initCookie</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:initCookieResponse</wsdl-message>
+                <wsdl-message-part-name>initCookieResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>oracle.portlet.wsrp.v1.soap.WSRP_v1_PortletManagement_PortType</service-endpoint-interface>
+        <wsdl-port-type xmlns:portTypeNS="urn:oasis:names:tc:wsrp:v1:intf">portTypeNS:WSRP_v1_PortletManagement_PortType</wsdl-port-type>
+        <wsdl-binding xmlns:bindingNS="urn:oasis:names:tc:wsrp:v1:bind">bindingNS:WSRP_v1_PortletManagement_Binding_SOAP</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>getPortletDescription</java-method-name>
+            <wsdl-operation>getPortletDescription</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletDescription</wsdl-message>
+                    <wsdl-message-part-name>getPortletDescription</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletDescriptionResponse</wsdl-message>
+                <wsdl-message-part-name>getPortletDescriptionResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>clonePortlet</java-method-name>
+            <wsdl-operation>clonePortlet</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:clonePortlet</wsdl-message>
+                    <wsdl-message-part-name>clonePortlet</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:clonePortletResponse</wsdl-message>
+                <wsdl-message-part-name>clonePortletResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>destroyPortlets</java-method-name>
+            <wsdl-operation>destroyPortlets</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:destroyPortlets</wsdl-message>
+                    <wsdl-message-part-name>destroyPortlets</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:destroyPortletsResponse</wsdl-message>
+                <wsdl-message-part-name>destroyPortletsResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>setPortletProperties</java-method-name>
+            <wsdl-operation>setPortletProperties</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:setPortletProperties</wsdl-message>
+                    <wsdl-message-part-name>setPortletProperties</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:setPortletPropertiesResponse</wsdl-message>
+                <wsdl-message-part-name>setPortletPropertiesResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getPortletProperties</java-method-name>
+            <wsdl-operation>getPortletProperties</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletProperties</wsdl-message>
+                    <wsdl-message-part-name>getPortletProperties</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletPropertiesResponse</wsdl-message>
+                <wsdl-message-part-name>getPortletPropertiesResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>getPortletPropertyDescription</java-method-name>
+            <wsdl-operation>getPortletPropertyDescription</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletPropertyDescription</wsdl-message>
+                    <wsdl-message-part-name>getPortletPropertyDescription</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:getPortletPropertyDescriptionResponse</wsdl-message>
+                <wsdl-message-part-name>getPortletPropertyDescriptionResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+    <service-endpoint-interface-mapping>
+        <service-endpoint-interface>oracle.portlet.wsrp.v1.soap.WSRP_v1_Registration_PortType</service-endpoint-interface>
+        <wsdl-port-type xmlns:portTypeNS="urn:oasis:names:tc:wsrp:v1:intf">portTypeNS:WSRP_v1_Registration_PortType</wsdl-port-type>
+        <wsdl-binding xmlns:bindingNS="urn:oasis:names:tc:wsrp:v1:bind">bindingNS:WSRP_v1_Registration_Binding_SOAP</wsdl-binding>
+        <service-endpoint-method-mapping>
+            <java-method-name>register</java-method-name>
+            <wsdl-operation>register</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:register</wsdl-message>
+                    <wsdl-message-part-name>register</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:registerResponse</wsdl-message>
+                <wsdl-message-part-name>registerResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>deregister</java-method-name>
+            <wsdl-operation>deregister</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:deregister</wsdl-message>
+                    <wsdl-message-part-name>deregister</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:deregisterResponse</wsdl-message>
+                <wsdl-message-part-name>deregisterResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+        <service-endpoint-method-mapping>
+            <java-method-name>modifyRegistration</java-method-name>
+            <wsdl-operation>modifyRegistration</wsdl-operation>
+            <method-param-parts-mapping>
+                <param-position>0</param-position>
+                <param-type>javax.xml.soap.SOAPElement</param-type>
+                <wsdl-message-mapping>
+                    <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:modifyRegistration</wsdl-message>
+                    <wsdl-message-part-name>modifyRegistration</wsdl-message-part-name>
+                    <parameter-mode>IN</parameter-mode>
+                </wsdl-message-mapping>
+            </method-param-parts-mapping>
+            <wsdl-return-value-mapping>
+                <method-return-value>javax.xml.soap.SOAPElement</method-return-value>
+                <wsdl-message xmlns:wsdlMsgNS="urn:oasis:names:tc:wsrp:v1:intf">wsdlMsgNS:modifyRegistrationResponse</wsdl-message>
+                <wsdl-message-part-name>modifyRegistrationResponse</wsdl-message-part-name>
+            </wsdl-return-value-mapping>
+        </service-endpoint-method-mapping>
+    </service-endpoint-interface-mapping>
+</java-wsdl-mapping>
+

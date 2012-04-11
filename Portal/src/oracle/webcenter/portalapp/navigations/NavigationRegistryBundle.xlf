@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.1" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+  <file source-language="en"
+        original="oracle.webcenter.portalapp.navigations.NavigationRegistryBundle"
+        datatype="x-oracle-adf">
+    <body>
+      <trans-unit id="PAGES.TITLE">
+        <source>Pages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGES.DESCRIPTION">
+        <source>Pages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGES.KEYWORDS">
+        <source>Pages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASK_FLOWS.TITLE">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASK_FLOWS.DESCRIPTION">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASK_FLOWS.KEYWORDS">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS.TITLE">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="PORTLETS.DESCRIPTION">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS.KEYWORDS">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FOLDER.TITLE">
+        <source>Folder</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="FOLDER.DESCRIPTION">
+        <source>Add a folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FOLDER.KEYWORDS">
+        <source>Folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.TITLE">
+        <source>Link</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="LINK.DESCRIPTION">
+        <source>Add a link to a URL, page, portlet, task flow, or external application</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.KEYWORDS">
+        <source>Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTENT_ITEM.TITLE">
+        <source>Content Item</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="CONTENT_ITEM.DESCRIPTION">
+        <source>Add a single content file</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="CONTENT_ITEM.KEYWORDS">
+        <source>Content Document UCM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTENT_QUERY.TITLE">
+        <source>Content Query</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="CONTENT_QUERY.DESCRIPTION">
+        <source>Query to add multiple content items</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="CONTENT_QUERY.KEYWORDS">
+        <source>Content Document UCM Query</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGES_QUERY.TITLE">
+        <source>Pages Query</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="PAGES_QUERY.DESCRIPTION">
+        <source>Query to add pages or folders</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="PAGES_QUERY.KEYWORDS">
+        <source>Pages Folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="INCLUDE_NAVIGATION.TITLE">
+        <source>Navigation Reference</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="INCLUDE_NAVIGATION.DESCRIPTION">
+        <source>Add a reference to another navigation</source>
+        <target/>
+      </trans-unit> 
+      <trans-unit id="INCLUDE_NAVIGATION.KEYWORDS">
+        <source>Navigation Include</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEPARATOR.TITLE">
+        <source>Separator</source>
+        <target/>
+      </trans-unit> 
+    </body>
+  </file>
+</xliff>

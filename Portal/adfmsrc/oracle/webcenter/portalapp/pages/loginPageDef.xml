@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.96" id="loginPageDef"
+                Package="oracle.webcenter.portalapp.pages">
+  <parameters>
+    <parameter id="page_info"
+               value="title=login;desc=;keywords=;createdBy=weblogic;createDate=2010-06-08T14:27:30;lastUpdatedBy=weblogic;lastUpdateDate=2010-06-08T14:27:30;permissionClass=oracle.webcenter.security.auth.HierarchicalResourcePermission;target=serviceID=oracle.webcenter.page,scopeID=s8bba98ff_4cbb_40b8_beee_296c916a23ed,resourceID=/oracle/webcenter/portalapp/pages/login.jspx;excluded=false;style="/>
+    <parameter id="page_title" value="login"/>
+  </parameters>
+  <executables>
+    <variableIterator id="variables"/>
+    <page viewId="${preferenceBean.defaultPageTemplate}"
+          id="pageTemplateBinding" Refresh="ifNeeded"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

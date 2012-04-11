@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:pe="http://xmlns.oracle.com/adf/pageeditor"
+          xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1" title="Home">
+      <af:form id="f1">    
+	<af:pageTemplate value="#{bindings.pageTemplateBinding.templateModel}" id="pt1">
+          <f:facet name="content">
+            <pe:pageCustomizable id="hm_pgc1">
+              <cust:panelCustomizable id="hm_pnc1" layout="scroll"/>
+              <f:facet name="editor">
+                <pe:pageEditorPanel id="pep1"/>
+              </f:facet>
+            </pe:pageCustomizable>
+          </f:facet>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

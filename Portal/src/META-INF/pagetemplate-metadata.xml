@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<pageTemplateDefs xmlns="http://xmlns.oracle.com/adf/faces/rich/pagetemplate">
+  <pagetemplate-jsp-ui-def>/oracle/webcenter/portalapp/pagetemplates/otn-dev-days-template.jspx</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/oracle/webcenter/portalapp/pagetemplates/pageTemplate_globe.jspx</pagetemplate-jsp-ui-def>
+  <pagetemplate-jsp-ui-def>/oracle/webcenter/portalapp/pagetemplates/pageTemplate_swooshy.jspx</pagetemplate-jsp-ui-def>
+</pageTemplateDefs>

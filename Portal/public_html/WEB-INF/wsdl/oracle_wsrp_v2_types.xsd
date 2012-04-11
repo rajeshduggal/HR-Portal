@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:tns="http://xmlns.oracle.com/portal/wsrp/v2"
+        targetNamespace="http://xmlns.oracle.com/portal/wsrp/v2" 
+        elementFormDefault="qualified">
+          
+  <complexType name="NamedString">
+    <sequence>
+      <element name="value" type="string"/>
+    </sequence>
+    <attribute name="name" type="string" use="required"/>
+  </complexType>
+  
+  <complexType name="NamedStringArray">
+    <sequence>
+      <element name="NamedString" type="tns:NamedString" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+  
+  <element name="GenericExtension" type="tns:NamedStringArray"/>          
+  
+</schema>

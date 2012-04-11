@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions xmlns="http://xmlns.oracle.com/webcenter/framework/service">
+
+  <!--
+    - This is where you specify custom component details for your application. 
+    - You can have as many of these service-definitions as you wish, each 
+    - corresponding to a specific type / group of custom objects in your 
+    - application.
+    -
+    - Through this you can declare resource views that render your component as
+    - well as names and descriptions to be used when your component is used in
+    - the context of WebCenter Search.
+    -
+    - The following is a tag-by-tag description of what you need to fill in.
+    -
+    - <service-definition id="mycompany.myproduct.myapp.mycomponent" version="11.1.1.0.0">
+    -
+    -   The id attribute is something that you choose will be a good unique
+    -   identifier of your component.
+    -
+    -   The version should stay at 11.1.1.0.0.
+    -
+    - <resource-view taskFlowId="/resource-viewer#resource-viewer"/>
+    -
+    -   The resource view specifies a task flow ID that helps identify the task
+    -   flow to render the display of your custom objects / resources. This
+    -   ADF Task Flow should be a bounded task flow using page fragments and
+    -   should have an input parameter declared called "resourceId" that
+    -   uniquely allows the Task Flow to display any given resource sought.
+    -
+    - <resource-bundle-class>mycompany.myproduct.myapp.mycomponent.resource.ComponentMessageBundle</resource-bundle-class>
+    - 
+    -   The Resource Bundle class defined below will be used to get the
+    -   translatable icon, name and description using the <icon-key>, 
+    -   <name-key> and <description-key> values. 
+    - 
+    -   If you do not want your name and description translatable, you don't 
+    -   need to have the resource-bundle-class declared and should use the 
+    -   <icon>, <name> and <description> tags instead.
+    -
+    - <icon-key>CUSTOM_COMPONENT_ICON_KEY</icon-key>
+    -
+    -   The key into the resource bundle to pick up your components 
+    -   translatable icon which will be shown next to search results. In this 
+    -   example, you will want  to make sure that CUSTOM_COMPONENT_ICON_KEY is
+    -   defined in your resource bundle class.
+    -
+    -   This value in the resource bundle for the icon is should be an icon
+    -   that represents your component and the value provided should be a path
+    -   that is accessible from the classpath to load whatever image files it
+    -   refers to.
+    -
+    - <name-key>CUSTOM_COMPONENT_NAME_KEY</name-key>
+    -
+    -   The key into the resource bundle to pick up your components 
+    -   translatable name. In this example, you will want to make sure that 
+    -   CUSTOM_COMPONENT_NAME_KEY is defined in your resource bundle class.
+    -
+    - <description-key>CUSTOM_COMPONENT_DESCRIPTION_KEY</description-key>
+    -
+    -   The key into the resource bundle to pick up your components 
+    -   translatable description. In this example, you will want to make sure
+    -   that CUSTOM_COMPONENT_DESCRIPTION_KEY is defined in your resource 
+    -   bundle class.
+    -
+    - <icon>/mycompany/myproduct/myapp/mycomponent/component.png</icon>
+    -
+    -   The non-translated icon path pointing to an icon that represents your 
+    -   component. Refer to explanations above for appropriate values.
+    -
+    - <name>My Component</name>
+    -
+    -   The non-translated name for your component.
+    -
+    - <description>My Component's Description</description>
+    -
+    -   The non-translated description for your component.
+    -
+    - <search-definition xmlns="http://xmlns.oracle.com/webcenter/search"
+    -                    id="mycompany.myproduct.myapp.mycomponent.query" version="11.1.1.0.0">
+    -   <query-manager-class>mycompany.myproduct.myapp.mycomponent.query.MyQueryManager</query-manager-class>
+    - </search-definition>
+    -
+    -   This is the place where you declare your Search API implementation. The value specified
+    -   for the id can be arbitrary, but the value specified for the version must be 11.1.1.0.0.
+    -   The value specified for the <query-manager-class> tag should be the name of the class
+    -   that you have developed, which implements the oracle.webcenter.search.QueryManager Java
+    -   interface.
+    -
+    - Un-comment the following entry (service-definition) when you have 
+    - identified such a component that you wish to model.
+    -->
+  <!--
+  <service-definition id="mycompany.myproduct.myapp.mycomponent" version="11.1.1.0.0">
+    <resource-view taskFlowId="/resource-viewer#resource-viewer"/>
+    <resource-bundle-class>mycompany.myproduct.myapp.mycomponent.resource.ComponentMessageBundle</resource-bundle-class>
+    <name-key>CUSTOM_COMPONENT_NAME_KEY</name-key>
+    <description-key>CUSTOM_COMPONENT_DESCRIPTION_KEY</description-key>
+    <icon>/mycompany/myproduct/myapp/mycomponent/component.png</icon>
+    <search-definition xmlns="http://xmlns.oracle.com/webcenter/search"
+                       id="mycompany.myproduct.myapp.mycomponent.query" version="11.1.1.0.0">
+      <query-manager-class>mycompany.myproduct.myapp.mycomponent.query.MyQueryManager</query-manager-class>
+    </search-definition>
+  </service-definition>
+  -->
+</definitions>
+

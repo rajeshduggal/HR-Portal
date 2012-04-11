@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="urn:oasis:names:tc:wsrp:v1:wsdl"
+                  xmlns:bind="urn:oasis:names:tc:wsrp:v1:bind"
+                  xmlns="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+  <import namespace="urn:oasis:names:tc:wsrp:v1:bind"
+          location="wsrp_v1_bindings.wsdl"/>
+
+  <wsdl:service name="WSRP_v1_Service">
+    <wsdl:port binding="bind:WSRP_v1_Markup_Binding_SOAP" name="WSRPBaseService">
+      <soap:address location="http://my.company.com:8888/myapp/WSRPBaseService"/>
+    </wsdl:port>
+    <wsdl:port binding="bind:WSRP_v1_ServiceDescription_Binding_SOAP" name="WSRPServiceDescriptionService">
+      <soap:address location="http://my.company.com:8888/myapp/WSRPServiceDescriptionService"/>
+    </wsdl:port>
+    <wsdl:port binding="bind:WSRP_v1_Registration_Binding_SOAP"      name="WSRPRegistrationService">
+      <soap:address location="http://my.company.com:8888/myapp/WSRPRegistrationService"/>
+    </wsdl:port>
+    <wsdl:port binding="bind:WSRP_v1_PortletManagement_Binding_SOAP" name="WSRPPortletManagementService">
+      <soap:address location="http://my.company.com:8888/myapp/WSRPPortletManagementService"/>
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>

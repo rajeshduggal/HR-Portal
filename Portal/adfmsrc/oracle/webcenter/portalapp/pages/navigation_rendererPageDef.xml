@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.44" id="navigation_rendererPageDef"
+                Package="oracle.webcenter.portalapp.pages">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <page viewId="${preferenceBean.defaultPageTemplate}"
+          id="pageTemplateBinding" Refresh="ifNeeded"/>
+    <taskFlow id="pageeditorpanel"
+              taskFlowId="#{pageEditorBean.pageEditorPanel}"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+    <taskFlow id="sitestructurerenderer1"
+              taskFlowId="/oracle/webcenter/portal/framework/navigation/renderer/navigation-renderer.xml#navigation-renderer"
+              activation="deferred"
+              Refresh="ifNeeded"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="SiteStructureResource"
+                   value="${navigationContext.currentModel.currentSelection}"/>
+        <parameter id="DocumentId"
+                   value="${param.datasource}"/>
+      </parameters>
+    </taskFlow>
+  </executables>
+  <bindings/>
+</pageDefinition>

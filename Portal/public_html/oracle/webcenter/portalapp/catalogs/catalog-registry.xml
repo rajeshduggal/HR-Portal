@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<catalogDefinition xmlns="http://xmlns.oracle.com/adf/rcs/catalog"
+                   id="resource-library"
+                   resourceBundle="oracle.webcenter.portalapp.catalogs.ResourceLibraryBundle">
+  <attributes>
+    <attribute value="RESOURCE_LIBRARY.TITLE" attributeId="Title"
+               isKey="true"/>
+    <attribute value="RESOURCE_LIBRARY.DESCRIPTION" attributeId="Description"
+               isKey="true"/>
+    <attribute value="RESOURCE_LIBRARY.KEYWORDS" attributeId="Subject"
+               isKey="true"/>
+    <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+               attributeId="IconURI"/>
+  </attributes>
+  <contents>
+   
+   <customFolder id="dcDataControls"
+                 factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DataControlContextFactory">
+      <attributes>
+         <attribute value="RT_DATACONTROL.TITLE" attributeId="Title"
+                    isKey="true"/>
+         <attribute value="RT_DATACONTROL.DESCRIPTION" attributeId="Description"
+                    isKey="true"/>
+         <attribute value="RT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                    isKey="true"/>
+         <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                    attributeId="IconURI"/>
+      </attributes>
+    </customFolder> 
+    
+    <customFolder id="dtDcDataControls"
+                  factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DTDataControlContextFactory">
+      <attributes>
+         <attribute value="DT_DATACONTROL.TITLE" attributeId="Title"
+                    isKey="true"/>
+         <attribute value="DT_DATACONTROL.DESCRIPTION" attributeId="Description"
+                    isKey="true"/>
+         <attribute value="DT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                    isKey="true"/>           
+         <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                    attributeId="IconURI"/>
+      </attributes>
+    </customFolder>
+    
+   <customFolder id="dcTaskflows" 
+                 factoryClass="oracle.webcenter.datacomposer.internal.adapter.taskflow.TaskflowContextFactory">
+      <attributes>
+         <attribute value="BUSINESS_MASHUPS.TITLE" attributeId="Title"
+                    isKey="true"/>
+         <attribute value="BUSINESS_MASHUPS.DESCRIPTION"
+                    attributeId="Description" isKey="true"/>
+         <attribute value="BUSINESS_MASHUPS.KEYWORDS" attributeId="Subject"
+                    isKey="true"/>
+         <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                    attributeId="IconURI"/>
+      </attributes>
+    </customFolder> 
+
+
+    <!-- These are the items shown in the "new" menu -->
+    <folder id="new">
+      <contents>
+        <folder id="newfolder">
+          <attributes>
+            <attribute value="NEW_FOLDER.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="NEW_FOLDER.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="NEW_FOLDER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents/>
+        </folder>
+        <component id="newcomp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="NEWCOMP.TITLE" isKey="true"/>
+            <attribute attributeId="Description" value="NEWCOMP.DESCRIPTION" isKey="true"/>
+            <attribute attributeId="Subject" value="NEWCOMP.KEYWORDS" isKey="true"/>
+            <attribute attributeId="IconURI" value="/adf/webcenter/component_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+              <![CDATA[<af:outputText id="#" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>]]>
+            </parameter>
+          </parameters>
+        </component>
+      </contents>
+    </folder>
+
+    <!-- Smart Tags 
+
+    components depend on the Spaces tag library
+    
+    <folder id="smartTags">
+      <attributes>
+        <attribute value="SMART_TAGS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="SMART_TAGS.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="SMART_TAGS.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/folderclosed_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <component id="copyrightMsgComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="COPYRIGHT_MESSAGE.TITLE" isKey="true"/>
+            <attribute attributeId="Description" value="COPYRIGHT_MESSAGE.DESCRIPTION" isKey="true"/>
+            <attribute attributeId="Subject" value="COPYRIGHT_MESSAGE.KEYWORDS" isKey="true"/>
+            <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:outputText id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="copyrightMessage"
+                                                  inlineStyle="white-space:nowrap;"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+          </parameters>
+        </component>
+        <component id="loginComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="LOGIN.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="LOGIN.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="LOGIN.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="login" inlineStyle="white-space:nowrap"
+                                                  text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_LOGIN}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_LOGIN}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+        </component>
+        <component id="logoutComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="LOGOUT.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="LOGOUT.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="LOGOUT.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="logout" inlineStyle="white-space:nowrap"
+                                                  text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_LOGOUT}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_LOGOUT_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="statusIndiComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="STATUS_INDICATOR.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="STATUS_INDICATOR.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="STATUS_INDICATOR.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="statusIndicator"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>            
+            <component id="globalHelpComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="GLOBAL_HELP.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="GLOBAL_HELP.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="GLOBAL_HELP.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="globalHelp"
+					       text="#{uib_o_w_w_r_WebCenter.LABEL_HELP}" 
+                                               shortDesc="#{uib_o_w_w_r_WebCenter.LABEL_HELP_DESC}"
+					       inlineStyle="white-space:nowrap"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="selfRegComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="SELF_REGISTRATION.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="SELF_REGISTRATION.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="SELF_REGISTRATION.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="selfRegistration"
+					       text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_SELFREG}" 
+                                               shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_SELFREG_DESC}"
+					       inlineStyle="white-space:nowrap"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>            
+            <component id="rssComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="RSS.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="RSS.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="RSS.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/rss_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="rss" inlineStyle="font-size:smaller; white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_RSS}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_RSS_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>    
+            <component id="aboutWcComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="ABOUT_WC.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="ABOUT_WC.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="ABOUT_WC.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="aboutWebcenter"
+					       text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_ABOUT}" 
+                                               shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_ABOUT_DESC}"
+					       inlineStyle="font-size:smaller;white-space:nowrap;"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>             
+            <component id="contactAdminComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="CONTACT_ADMIN.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="CONTACT_ADMIN.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="CONTACT_ADMIN.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="contactAdmin" inlineStyle="font-size:smaller; white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.CONTACT_ADMINISTRATOR}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.CONTACT_ADMINISTRATOR_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="privacyUrlComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="PRIVACY_URL.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="PRIVACY_URL.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="PRIVACY_URL.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="privacyURL" inlineStyle="font-size:smaller; white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.PRIVACY_STMT}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.PRIVACY_STMT_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="adminComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="ADMINISTRATION.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="ADMINISTRATION.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="ADMINISTRATION.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="administration" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_ADMINISTRATION}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_ADMINISTRATION_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="personalSpaceComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="PERSONAL_SPACE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="PERSONAL_SPACE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="PERSONAL_SPACE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="personalSpace" text="Personal Space"
+                                                  inlineStyle="white-space:nowrap;"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>
+            <component id="appLogoComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="APPLICATION_LOGO.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="APPLICATION_LOGO.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="APPLICATION_LOGO.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="applicationLogo"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component> 
+            <component id="appTitleComp" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="APPLICATION_TITLE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="APPLICATION_TITLE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="APPLICATION_TITLE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="applicationTitle"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+              </parameters>
+            </component>              
+            <component id="createGsComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="CREATE_GS.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="CREATE_GS.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="CREATE_GS.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="createGroupSpace" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_s_r_Spaces.HEADING_CREATE_COMMUNITY}" 
+                                                  shortDesc="#{uib_o_w_s_r_Spaces.HEADING_CREATE_COMMUNITY}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">createGroupSpace</parameter>
+              </parameters>
+            </component>
+            <component id="createPageComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="CREATE_PAGE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="CREATE_PAGE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="CREATE_PAGE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="createPage" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.LABEL_CREATE_PAGE}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.TOOLTIP_MANAGE_PAGES_CREATE_PAGE}"
+                                                  icon="/adf/webcenter/new_ena.png"
+                                                  hoverIcon="/adf/webcenter/new_ovr.png"
+                                                  depressedIcon="/adf/webcenter/new_dwn.png"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">createPage</parameter>
+              </parameters>
+            </component>
+            <component id="gsSwitcherComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="GS_SWITCHER.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="GS_SWITCHER.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="GS_SWITCHER.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="groupSpaceSwitcher" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_s_r_Spaces.LABEL_COMMUNITIES}" 
+                                                  shortDesc="#{uib_o_w_s_r_Spaces.LABEL_COMMUNITIES_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">createGroupSpace</parameter>
+              </parameters>
+            </component>
+            <component id="favMenuComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="FAVORITES_MENU.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="FAVORITES_MENU.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="FAVORITES_MENU.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/favorites_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="favoritesMenu" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.LABEL_FAVORITES_DESC}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.LABEL_FAVORITES_DESC}"
+                                                  icon="/adf/webcenter/favorites_ena.png"
+                                                  hoverIcon="/adf/webcenter/favorites_ovr.png"
+                                                  depressedIcon="/adf/webcenter/favorites_dwn.png"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">favoritesMenu</parameter>
+              </parameters>
+            </component>
+            <component id="preferComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="PREFERENCES.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="PREFERENCES.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="PREFERENCES.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/prefgeneral_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="preferences" inlineStyle="white-space:nowrap;"
+                                                  text="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_PREFERENCES}" 
+                                                  shortDesc="#{uib_o_w_w_r_WebCenter.GLOBAL_LINK_PREFERENCES_DESC}"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">preferences</parameter>
+              </parameters>
+            </component>
+            <component id="currUserProfileComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="CURR_USER_PROFILE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="CURR_USER_PROFILE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="CURR_USER_PROFILE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:commandImageLink id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="currentUserProfile"
+					       text="#{security.userDisplayName}" 
+                                               shortDesc="#{security.userDisplayName}"
+					       inlineStyle="white-space:nowrap"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">preferences</parameter>
+              </parameters>
+            </component>
+            <component id="taggingComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="TAGS_FOR_CURRENT_PAGE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="TAGS_FOR_CURRENT_PAGE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="TAGS_FOR_CURRENT_PAGE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:pageActionButton id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="tagging"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">tagging</parameter>
+              </parameters>
+            </component>
+            <component id="linkingComp" factoryClass="oracle.webcenter.webcenterapp.spacescomponents.internal.view.rc.WebCenterXmlComponentFactory">
+              <attributes>
+                <attribute attributeId="Title" value="LINKS_FOR_CURRENT_PAGE.TITLE" isKey="true"/>
+                <attribute attributeId="Description" value="LINKS_FOR_CURRENT_PAGE.DESCRIPTION" isKey="true"/>
+                <attribute attributeId="Subject" value="LINKS_FOR_CURRENT_PAGE.KEYWORDS" isKey="true"/>
+                <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+              </attributes>
+              <parameters>
+                <parameter id="xml">
+                  <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <wcdc:pageActionButton id="#" xmlns:wcdc="http://xmlns.oracle.com/webcenter/spaces/taglib"
+                                                  type="linking"/>
+                  </cust:showDetailFrame>
+                  ]]>
+                </parameter>
+                <parameter id="type">linking</parameter>
+              </parameters>
+            </component>
+            <resource path="search-service-view.jar/ADF_TaskFlow/oracle+webcenter+search+controller+taskflows+localToolbarSearch.xml#search-toolbar" repository="application.classpath" id="searchView">
+              <attributes>
+                <attribute value="SPACES_SEARCH.TITLE" attributeId="Title" isKey="true"/>
+                <attribute value="SPACES_SEARCH.DESCRIPTION" attributeId="Description" isKey="true"/>
+                <attribute value="SPACES_SEARCH.KEYWORDS" attributeId="Subject" isKey="true"/>
+                <attribute value="oracle.webcenter.search" attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+                <attribute value="/adf/webcenter/search_qualifier.png" attributeId="IconURI"/>
+              </attributes>
+          <contents/>
+        </resource>
+      </contents>
+    </folder>
+    -->
+    
+    <!-- Common Components -->
+    <folder id="components">
+      <attributes>
+        <attribute value="COMPONENTS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="COMPONENTS.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="COMPONENTS.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/foldercomponent_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+          <component id="pc" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="BOX" isKey="true"/>
+              <attribute attributeId="Description" value="BOX.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="BOX.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:panelCustomizable id="#" xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"/>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="sdf" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="MOVABLE_BOX" isKey="true"/>
+              <attribute attributeId="Description" value="MOVABLE_BOX.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="MOVABLE_BOX.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/moveframe_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.MOVABLE_BOX}">
+                    <cust:panelCustomizable id="#" layout="scroll"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="image" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="IMAGE" isKey="true"/>
+              <attribute attributeId="Description" value="IMAGE.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="IMAGE.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/image_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.IMAGE}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:goImageLink xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="#" icon="/adf/pe/images/default_image.png" shortDesc="#{null}" />
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="text" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="TEXT" isKey="true"/>
+              <attribute attributeId="Description" value="TEXT.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="TEXT.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/text_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.TEXT}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none" selectChild="no"
+                                        showResizer="never" stretchContent="false">
+                    <af:richTextEditor id="#" simple="true" contentStyle="width:100%"
+                                       clientComponent="true" toolboxLayout="font formatCommon color list"
+                                       xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="link" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="LINK" isKey="true"/>
+              <attribute attributeId="Description" value="LINK.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="LINK.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/weblinks_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:goLink id="#" text="#{componentExtensionBundle.LINK_TEXT}"
+                               xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="page" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="PAGE" isKey="true"/>
+              <attribute attributeId="Description" value="PAGE.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="PAGE.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/htmlfile_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.PAGE}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="#{changeModeBean.inEditMode ? 'always' : 'never'}">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:inlineFrame id="#" source="/oracle/adfinternal/pageeditor/common/defaultpage.jspx"
+                                    xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="outputText" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="OUTPUT_TEXT" isKey="true"/>
+              <attribute attributeId="Description" value="OUTPUT_TEXT.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="OUTPUT_TEXT.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/elementtext_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.OUTPUT_TEXT}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:outputText id="#" escape="false" value="#{componentExtensionBundle.OUTPUT_TEXT_TEXT}"
+                                   xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+          <component id="separator" factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+            <attributes>
+              <attribute attributeId="Title" value="SEPARATOR.TITLE" isKey="true"/>
+              <attribute attributeId="Description" value="SEPARATOR.DESCRIPTION" isKey="true"/>
+              <attribute attributeId="Subject" value="SEPARATOR.KEYWORDS" isKey="true"/>
+              <attribute attributeId="IconURI" value="/adf/webcenter/defaultfile_qualifier.png"/>
+            </attributes>
+            <parameters>
+              <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:spacer id="#" styleClass="WCGlobalNavSeparator"
+                               xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>]]>
+              </parameter>
+            </parameters>
+          </component>
+
+      </contents>
+    </folder>
+
+    <!-- Documents (Content) -->
+    <customFolder id="doclibAllDocuments"
+                  factoryClass="oracle.webcenter.content.model.rc.CustomFolderContextFactory">
+      <attributes>
+        <attribute value="DOCLIB_ALL_DOCUMENTS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="DOCLIB_ALL_DOCUMENTS.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="DOCLIB_ALL_DOCUMENTS.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="oracle.webcenter.doclib" attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/folderlibrary_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+    </customFolder>
+
+    <!-- Portlets -->
+    <customContent id="portletsCustomContent"
+                   contentProviderClass="oracle.adf.rc.webcenter.WebCenterContentProvider">
+      <attributes>
+        <attribute value="PORTLETS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="PORTLETS.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="PORTLETS.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.portlet"
+                   attributeId="WEBCENTER_SERVICE_ID"/>
+        <attribute value="/adf/webcenter/folderportlet_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+    </customContent>
+
+    <!-- All Task Flows -->
+    <customFolder id="task_flows" path="task_flows"
+                  factoryClass="oracle.adf.rc.adapter.library.ResourceLibraryFactory">
+      <attributes>
+        <attribute value="TASK_FLOWS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="TASK_FLOWS.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="TASK_FLOWS.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/foldertaskflow_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+    </customFolder>
+
+    <!-- All Connections - provides access to things like BI reports -->
+    <customFolder id="connections" path="connections"
+                  factoryClass="oracle.adf.rc.adapter.library.ResourceLibraryFactory">
+      <attributes>
+        <attribute value="CONNECTIONS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="CONNECTIONS.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="CONNECTIONS.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+    </customFolder>
+
+    <!-- Resource Catalogs from SRM -->
+    <customFolder id="catalogs"
+                  factoryClass="oracle.webcenter.portalframework.genericsiteresources.model.rc.ResourceManagerRCContextFactory">
+      <attributes>
+        <attribute value="CATALOGS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="CATALOGS.DESCRIPTION" attributeId="Description"  isKey="true"/>
+        <attribute value="CATALOGS.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <parameters>
+        <parameter id="RESOURCE_TYPE">resourceCatalog</parameter>
+      </parameters>
+    </customFolder>
+
+    <!-- Navigations and Navigation Taskflows -->
+    <folder id="navigations">
+      <attributes>
+        <attribute value="SITE_STRUCTURES.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="SITE_STRUCTURES.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="SITE_STRUCTURES.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/folderstructurenavigator_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <customFolder id="SRMNavigations"
+                      factoryClass="oracle.webcenter.portalframework.genericsiteresources.model.rc.ResourceManagerRCContextFactory">
+          <attributes>
+            <attribute value="SITE_STRUCTURES.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="SITE_STRUCTURES.DESCRIPTION" attributeId="Description"  isKey="true"/>
+          </attributes>
+          <parameters>
+            <parameter id="RESOURCE_TYPE">navigation</parameter>
+          </parameters>
+        </customFolder>
+        <resource path="navigation-taskflows.jar/ADF_TaskFlow/oracle+webcenter+navigationtaskflows+view+pagemenu-definition.xml#pagemenu-definition" 
+                  repository="application.classpath" id="navigationMenu">
+           <attributes>
+              <attribute value="SITE_STRUCTURE_MENU.TITLE" attributeId="Title" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_MENU.DESCRIPTION" attributeId="Description" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_MENU.KEYWORDS" attributeId="Subject" isKey="true"/>
+              <attribute value="/adf/webcenter/menuBar_qualifier.png" attributeId="IconURI"/>
+           </attributes>
+          <contents/>
+        </resource>
+        <resource path="navigation-taskflows.jar/ADF_TaskFlow/oracle+webcenter+navigationtaskflows+view+pagetree-definition.xml#pagetree-definition" 
+                  repository="application.classpath" id="navigationTree">
+           <attributes>
+              <attribute value="SITE_STRUCTURE_TREE.TITLE" attributeId="Title" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_TREE.DESCRIPTION" attributeId="Description" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_TREE.KEYWORDS" attributeId="Subject" isKey="true"/>
+              <attribute value="/adf/webcenter/treeview_qualifier.png" attributeId="IconURI"/>
+           </attributes>
+          <contents/>
+        </resource>
+        <resource path="navigation-taskflows.jar/ADF_TaskFlow/oracle+webcenter+navigationtaskflows+view+pagebreadcrumb-definition.xml#pagebreadcrumb-definition" 
+                  repository="application.classpath" id="navigationBreadcrumb">
+           <attributes>
+              <attribute value="SITE_STRUCTURE_BREADCRUMB.TITLE" attributeId="Title" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_BREADCRUMB.DESCRIPTION" attributeId="Description" isKey="true"/>
+              <attribute value="SITE_STRUCTURE_BREADCRUMB.KEYWORDS" attributeId="Subject" isKey="true"/>
+              <attribute value="/adf/webcenter/menupath_qualifier.png" attributeId="IconURI"/>
+           </attributes>
+          <contents/>
+        </resource>
+      </contents>
+    </folder>
+
+    <!-- Lists -->
+    <folder id="lists">
+      <attributes>
+        <attribute value="LISTS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="LISTS.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="LISTS.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/folderlists_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <customFolder id="listsFolder" factoryClass="oracle.webcenter.list.view.rc.ListServiceContextFactory">
+          <attributes>
+            <attribute value="LISTS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="LISTS.DESCRIPTION" attributeId="Description" isKey="true"/>
+            <attribute value="LISTS.KEYWORDS" attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.list" attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderlists_qualifier.png" attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+      </contents>
+    </folder>
+
+    <!-- Saved Searches-->
+    <folder id="saveSearches">
+      <attributes>
+        <attribute value="SAVED_SEARCHES.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="SAVED_SEARCHES.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="SAVED_SEARCHES.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/foldersavedsearches_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <customFolder id="savedSearchesFolder" factoryClass="oracle.webcenter.search.view.rc.SearchServiceContextFactory">
+          <attributes>
+            <attribute value="SAVED_SEARCHES.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="SAVED_SEARCHES.DESCRIPTION" attributeId="Description" isKey="true"/>
+            <attribute value="SAVED_SEARCHES.KEYWORDS" attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.search" attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/foldersavedsearches_qualifier.png" attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+      </contents>
+    </folder>
+
+    <!-- Analytics -->
+    <folder id="analytics">
+      <attributes>
+        <attribute value="ANALYTICS.TITLE" attributeId="Title" isKey="true"/>
+        <attribute value="ANALYTICS.DESCRIPTION" attributeId="Description" isKey="true"/>
+        <attribute value="ANALYTICS.KEYWORDS" attributeId="Subject" isKey="true"/>
+        <attribute value="/adf/webcenter/folderanalytics_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <customFolder id="analyticsServiceFolder" factoryClass="oracle.webcenter.analytics.view.rc.ASServiceContextFactory">
+          <attributes>
+            <attribute value="ANALYTICS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="ANALYTICS.DESCRIPTION" attributeId="Description" isKey="true"/>
+            <attribute value="ANALYTICS.KEYWORDS" attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.analytics" attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderanalytics_qualifier.png" attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+      </contents>
+    </folder>
+
+  </contents>
+  <schema resourceBundle="oracle.adf.rc.attribute.nls.AttributeBundle">
+    <descriptor labelKey="TITLE.PROMPT_KEY" multivalue="false"
+                shortLabelKey="TITLE.SHORT_PROMPT_KEY" attributeId="Title"
+                searchable="true" endUserVisible="true"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor labelKey="DESCRIPTION.PROMPT_KEY" multivalue="false"
+                shortLabelKey="DESCRIPTION.SHORT_PROMPT_KEY"
+                attributeId="Description" searchable="true"
+                endUserVisible="true"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor labelKey="SUBJECT.PROMPT_KEY" multivalue="false"
+                shortLabelKey="SUBJECT.SHORT_PROMPT_KEY" attributeId="Subject"
+                searchable="true" endUserVisible="true"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor labelKey="TOOL_TIP.PROMPT_KEY" multivalue="false"
+                shortLabelKey="TOOL_TIP.SHORT_PROMPT_KEY" attributeId="ToolTip"
+                searchable="false" endUserVisible="true"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor labelKey="ICON_URI.PROMPT_KEY" multivalue="false"
+                shortLabelKey="ICON_URI.SHORT_PROMPT_KEY" attributeId="IconURI"
+                searchable="false" endUserVisible="false"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+  </schema>
+</catalogDefinition>

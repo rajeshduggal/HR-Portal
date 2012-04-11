@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<catalogDefinition description="Navigation Resource Registry"
+                   id="navigation-registry" name="Navigation Resource Registry"
+                   resourceBundle="oracle.webcenter.portalapp.navigations.NavigationRegistryBundle"
+                   xmlns="http://xmlns.oracle.com/adf/rcs/catalog">
+  <contents>
+    <!-- used by link picker in navigation editor -->
+    <folder id="links">
+      <contents>
+        <customFolder id="pagesfol"
+                      factoryClass="oracle.webcenter.page.view.rc.PageServiceContextFactory">
+          <attributes>
+            <attribute value="PAGES.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="PAGES.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="PAGES.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/pages_qualifier.png"
+                       attributeId="IconURI" isKey="false"/>
+          </attributes>
+          <parameters>
+            <parameter id="path">/oracle/webcenter/portalapp/pagehierarchy/pages.xml</parameter>
+            <parameter id="visibility">all</parameter>
+          </parameters>
+        </customFolder>
+        <!-- All Task Flows -->
+        <customFolder id="task_flows" path="task_flows"
+                      factoryClass="oracle.adf.rc.adapter.library.ResourceLibraryFactory">
+          <attributes>
+            <attribute value="TASK_FLOWS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="TASK_FLOWS.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="TASK_FLOWS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/foldertaskflow_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- Portlets -->
+        <customFolder id="portletsCustomFolder"
+                      factoryClass="oracle.adfinternal.model.portlet.rc.ptlprovider.PortletProducerContextFactory">
+          <attributes>
+            <attribute value="PORTLETS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="PORTLETS.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="PORTLETS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.portlet"
+                       attributeId="WEBCENTER_SERVICE_ID"/>
+            <attribute value="/adf/webcenter/folderportlet_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+      </contents>
+    </folder>
+    <!-- used by "add" menu in navigation editor -->
+    <folder id="new">
+      <contents>
+        <url id="newcontentlink"
+             factoryClass="oracle.webcenter.content.model.rc.ContentUrlResourceFactory"
+             url="">
+          <attributes>
+            <attribute value="CONTENT_ITEM.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="CONTENT_ITEM.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="CONTENT_ITEM.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/oracle/webcenter/portalapp/pagetemplates/contentTemplate.jspx"
+                       attributeId="PageTemplate" isKey="false"/>
+            <attribute value="/oracle/webcenter/content/templates/seeded/content-default-detail.jsff"
+                       attributeId="LayoutTemplate" isKey="false"/>
+            <attribute value="/adf/webcenter/content_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents/>
+        </url>
+        <customFolder id="newcontentquery"
+                      factoryClass="oracle.webcenter.content.model.rc.ContentListFactory">
+          <attributes>
+            <attribute value="CONTENT_QUERY.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="CONTENT_QUERY.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="CONTENT_QUERY.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/contentquery_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <parameters>
+            <parameter id="datasourceType">dsTypeQueryExpression</parameter>
+          </parameters>
+        </customFolder>
+        <url id="newlink"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.LinkResourceFactory"
+             url="">
+          <attributes>
+            <attribute value="LINK.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="LINK.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="LINK.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/link_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents/>
+        </url>
+        <customFolder id="newpagesquery"
+                      factoryClass="oracle.webcenter.page.view.rc.PageServiceContextFactory">
+          <attributes>
+            <attribute value="PAGES_QUERY.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="PAGES_QUERY.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="PAGES_QUERY.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/pagequery_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <includeNavigation id="newincl" navigationId="" scope="/">
+          <attributes>
+            <attribute value="INCLUDE_NAVIGATION.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="INCLUDE_NAVIGATION.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="INCLUDE_NAVIGATION.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="/adf/webcenter/navigationreference_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </includeNavigation>
+        <folder id="newfolder">
+          <attributes>
+            <attribute value="FOLDER.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="FOLDER.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="FOLDER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents/>
+        </folder>
+        <separator id="newsep">
+          <attributes>
+            <attribute value="SEPARATOR.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/separator_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="false" attributeId="editDialogNeeded"/>
+          </attributes>
+        </separator>
+      </contents>
+    </folder>
+  </contents>
+  <schema resourceBundle="oracle.adf.rc.attribute.nls.AttributeBundle">
+    <descriptor shortLabelKey="TITLE.SHORT_PROMPT_KEY" endUserVisible="true"
+                attributeId="Title" multivalue="false"
+                labelKey="TITLE.PROMPT_KEY" searchable="true"/>
+    <descriptor shortLabelKey="DESCRIPTION.SHORT_PROMPT_KEY"
+                endUserVisible="true" attributeId="Description"
+                multivalue="false" labelKey="DESCRIPTION.PROMPT_KEY"
+                searchable="true"/>
+    <descriptor shortLabelKey="SUBJECT.SHORT_PROMPT_KEY" endUserVisible="true"
+                attributeId="Subject" multivalue="false"
+                labelKey="SUBJECT.PROMPT_KEY" searchable="true"/>
+    <descriptor shortLabelKey="TOOL_TIP.SHORT_PROMPT_KEY" endUserVisible="true"
+                attributeId="ToolTip" multivalue="false"
+                labelKey="TOOL_TIP.PROMPT_KEY" searchable="false"/>
+    <descriptor shortLabelKey="ICON_URI.SHORT_PROMPT_KEY" endUserVisible="false"
+                attributeId="IconURI" multivalue="false"
+                labelKey="ICON_URI.PROMPT_KEY" searchable="false"/>
+  </schema>
+</catalogDefinition>

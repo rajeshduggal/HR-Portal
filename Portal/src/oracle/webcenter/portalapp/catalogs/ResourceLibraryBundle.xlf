@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+  <file source-language="en"
+        original="oracle.webcenter.portalapp.catalogs.ResourceLibraryBundle.xlf" datatype="xml">
+    <body>
+      <!-- Displayable text for the catalog schema -->
+      <trans-unit id="TITLE.PROMPT_KEY">
+        <source>Name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TITLE.SHORT_PROMPT_KEY">
+        <source>Name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DESCRIPTION.PROMPT_KEY">
+        <source>Description</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DESCRIPTION.SHORT_PROMPT_KEY">
+        <source>Description</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBJECT.PROMPT_KEY">
+        <source>Subject and Keywords</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBJECT.SHORT_PROMPT_KEY">
+        <source>Keywords</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TOOL_TIP.LABEL">
+        <source>Tool Tip</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TOOL_TIP.SHORT_LABEL">
+        <source>Tool Tip</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ICON_URI.LABEL">
+        <source>Icon URI</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ICON_URI.SHORT_LABEL">
+        <source>Icon URI</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEBCENTER_SERVICE_ID.LABEL">
+        <source>WebCenter Web 2.0 Service ID</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEBCENTER_SERVICE_ID.SHORT_LABEL">
+        <source>Service ID</source>
+        <target/>
+      </trans-unit>
+      <!-- Library Title -->
+      <trans-unit id="RESOURCE_LIBRARY.TITLE">
+        <source>Resource Library</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RESOURCE_LIBRARY.DESCRIPTION">
+        <source>Resource Library</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RESOURCE_LIBRARY.KEYWORDS">
+        <source>Resource Library</source>
+        <target/>
+      </trans-unit>
+      <!-- New menu -->
+      <trans-unit id="NEW_FOLDER.TITLE">
+        <source>Folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NEW_FOLDER.DESCRIPTION">
+        <source>Create a new folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NEW_FOLDER.KEYWORDS">
+        <source>Folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NEWCOMP.TITLE">
+        <source>Component</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NEWCOMP.DESCRIPTION">
+        <source>Empty component whose XML can be easily edited</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NEWCOMP.KEYWORDS">
+        <source>blank new component</source>
+        <target/>
+      </trans-unit>
+      <!-- smart tags -->
+      <trans-unit id="SMART_TAGS.TITLE">
+        <source>Smart Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SMART_TAGS.DESCRIPTION">
+        <source>Smart Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SMART_TAGS.KEYWORDS">
+        <source>Smart Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.TITLE">
+        <source>Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.DESCRIPTION">
+        <source>Login link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.KEYWORDS">
+        <source>Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.TITLE">
+        <source>Logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.DESCRIPTION">
+        <source>Logout link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.KEYWORDS">
+        <source>Logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.TITLE">
+        <source>RSS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.DESCRIPTION">
+        <source>RSS link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.KEYWORDS">
+        <source>RSS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.TITLE">
+        <source>About Webcenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.DESCRIPTION">
+        <source>About Webcenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.KEYWORDS">
+        <source>about, webcenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.TITLE">
+        <source>Application Logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.DESCRIPTION">
+        <source>Application Logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.KEYWORDS">
+        <source>application, logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.TITLE">
+        <source>Application Title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.DESCRIPTION">
+        <source>Application Title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.KEYWORDS">
+        <source>application, title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.TITLE">
+        <source>Current User Profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.DESCRIPTION">
+        <source>Current User Profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.KEYWORDS">
+        <source>user, profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.TITLE">
+        <source>Global Help</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.DESCRIPTION">
+        <source>Link to Global Help Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.KEYWORDS">
+        <source>global, help</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.TITLE">
+        <source>Self Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.DESCRIPTION">
+        <source>Link to Self Registration Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.KEYWORDS">
+        <source>self, registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.TITLE">
+        <source>Status Indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.DESCRIPTION">
+        <source>Status Indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.KEYWORDS">
+        <source>status, indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.TITLE">
+        <source>Contact Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.DESCRIPTION">
+        <source>Contact Administration link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.KEYWORDS">
+        <source>Contact Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.TITLE">
+        <source>Privacy URL</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.DESCRIPTION">
+        <source>Privacy URL link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.KEYWORDS">
+        <source>Privacy URL</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.TITLE">
+        <source>Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.DESCRIPTION">
+        <source>Administration link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.KEYWORDS">
+        <source>Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.TITLE">
+        <source>Create Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.DESCRIPTION">
+        <source>Create Page link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.KEYWORDS">
+        <source>Create Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.TITLE">
+        <source>Favorites Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.DESCRIPTION">
+        <source>Favorites Menu.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.KEYWORDS">
+        <source>Favorites Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.TITLE">
+        <source>User Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.DESCRIPTION">
+        <source>Preferences link.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.KEYWORDS">
+        <source>Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.TITLE">
+        <source>Copyright Message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.DESCRIPTION">
+        <source>Copyright Message.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.KEYWORDS">
+        <source>Copyright</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.TITLE">
+        <source>Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.DESCRIPTION">
+        <source>Tags for current page.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.KEYWORDS">
+        <source>Tag</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.TITLE">
+        <source>Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.DESCRIPTION">
+        <source>Links to current page.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.KEYWORDS">
+        <source>Link</source>
+        <target/>
+      </trans-unit>
+      <!-- ADF Faces Components (Layout) -->
+      <trans-unit id="COMPONENTS.TITLE">
+        <source>Components</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COMPONENTS.DESCRIPTION">
+        <source>Components to add to your page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COMPONENTS.KEYWORDS">
+        <source>ADF,faces,component,tag, layout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX">
+        <source>Box</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX.DESCRIPTION">
+        <source>A box in which content can flow vertically or horizontally.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX.KEYWORDS">
+        <source>panelCustomizable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX">
+        <source>Movable Box</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX.DESCRIPTION">
+        <source>A box in which content can flow vertically or horizontally. It
+                also provides customization options such as move, expand or
+                collapse, and resize.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX.KEYWORDS">
+        <source>showDetailFrame</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE">
+        <source>Image</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE.DESCRIPTION">
+        <source>An image with a hyperlink.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE.KEYWORDS">
+        <source>link imageLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK">
+        <source>Page Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK.DESCRIPTION">
+        <source>Link to a page within your portal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK.KEYWORDS">
+        <source>goLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT">
+        <source>Text</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT.DESCRIPTION">
+        <source>Formatted text</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT.KEYWORDS">
+        <source>rich text richTextEditor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK">
+        <source>Hyperlink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.DESCRIPTION">
+        <source>Link to a page or a Web site</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.KEYWORDS">
+        <source>goLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE">
+        <source>Web Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE.DESCRIPTION">
+        <source>Includes another Web page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE.KEYWORDS">
+        <source>inlineFrame iFrame</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT">
+        <source>HTML Markup</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT.DESCRIPTION">
+        <source>Raw HTML and JavaScript</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT.KEYWORDS">
+        <source>script html embed object</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEPARATOR.TITLE">
+        <source>Separator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEPARATOR.DESCRIPTION">
+        <source>Vertical separator used in the global links area</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEPARATOR.KEYWORDS">
+        <source>separator divider bar</source>
+        <target/>
+      </trans-unit>
+      <!-- Documents -->
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.TITLE">
+        <source>All Documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.DESCRIPTION">
+        <source>All documents you have access to</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <!-- Portlets -->
+      <trans-unit id="PORTLETS.TITLE">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS.DESCRIPTION">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS.KEYWORDS">
+        <source>Portlets, Producer</source>
+        <target/>
+      </trans-unit>
+      <!-- Connections -->
+      <trans-unit id="CONNECTIONS.TITLE">
+        <source>Connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS.DESCRIPTION">
+        <source>Application connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS.KEYWORDS">
+        <source>connection</source>
+        <target/>
+      </trans-unit>
+      <!-- Resource Catalogs -->
+      <trans-unit id="CATALOGS.TITLE">
+        <source>Resource Catalogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CATALOGS.DESCRIPTION">
+        <source>Application resource catalogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CATALOGS.KEYWORDS">
+        <source>resource, catalog, taskflow, data control</source>
+        <target/>
+      </trans-unit>
+      <!-- Task Flows -->
+      <trans-unit id="TASK_FLOWS.TITLE">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASK_FLOWS.DESCRIPTION">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASK_FLOWS.KEYWORDS">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <!-- Resource Catalogs -->
+      <trans-unit id="CATALOGS.TITLE">
+        <source>Resource Catalogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CATALOGS.DESCRIPTION">
+        <source>Resource catalogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CATALOGS.KEYWORDS">
+        <source>resource catalog</source>
+        <target/>
+      </trans-unit>
+      <!-- Navigations -->
+      <trans-unit id="SITE_STRUCTURES.TITLE">
+        <source>Navigations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURES.DESCRIPTION">
+        <source>Navigation structures</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURES.KEYWORDS">
+        <source>Navigations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_MENU.TITLE">
+        <source>Navigation Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_MENU.DESCRIPTION">
+        <source>Navigation Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_MENU.KEYWORDS">
+        <source>Navigation Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_TREE.TITLE">
+        <source>Navigation Tree</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_TREE.DESCRIPTION">
+        <source>Navigation Tree</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_TREE.KEYWORDS">
+        <source>Navigation Treeu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_BREADCRUMB.TITLE">
+        <source>Navigation Breadcrumb</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_BREADCRUMB.DESCRIPTION">
+        <source>Navigation Breadcrumb</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_BREADCRUMB.KEYWORDS">
+        <source>Navigation Breadcrumb</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINK.TITLE">
+        <source>Quick Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINK.DESCRIPTION">
+        <source>Task flow that renders a single navigation link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINK.KEYWORDS">
+        <source>Quick Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINKS.TITLE">
+        <source>Quick Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINKS.DESCRIPTION">
+        <source>Task flow that renders multiple navigation links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SITE_STRUCTURE_QUICK_LINKS.KEYWORDS">
+        <source>Quick Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.TITLE">
+        <source>Business Mashups</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.DESCRIPTION">
+        <source>Business Mashups created through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.KEYWORDS">
+        <source>Business Mashups</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.TITLE">
+        <source>Runtime DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.DESCRIPTION">
+        <source>Datacontrols created through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.KEYWORDS">
+        <source>Runtime DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.TITLE">
+        <source>Design Time DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.DESCRIPTION">
+        <source>Datacontrols created at design time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.KEYWORDS">
+        <source>Design Time DataControls</source>
+        <target/>
+      </trans-unit>
+      <!-- Lists, Search, Analytics folders -->
+      <trans-unit id="LISTS.TITLE">
+        <source>Lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS.DESCRIPTION">
+        <source>All lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS.KEYWORDS">
+        <source>List, Enumerate, Roll, Table</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.TITLE">
+        <source>Saved Searches</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.DESCRIPTION">
+        <source>Searches you or other portal members have saved</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.KEYWORDS">
+        <source>Search, Find</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS.TITLE">
+        <source>Analytics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS.DESCRIPTION">
+        <source>Performance and usage metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS.KEYWORDS">
+        <source>Analytics, console, statistics, portal, usage, traffic, metrics,
+                reports</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

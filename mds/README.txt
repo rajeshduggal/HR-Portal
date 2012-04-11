@@ -1,0 +1,1 @@
+Important! If the application is source controlled then the mds directory must also be added to source control even though it is empty. Otherwise your application might fail to run. However, the README.txt file should not be added to source control.

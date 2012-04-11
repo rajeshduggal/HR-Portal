@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adf-config xmlns="http://xmlns.oracle.com/adf/config"
+            xmlns:config="http://xmlns.oracle.com/bc4j/configuration"
+            xmlns:adf="http://xmlns.oracle.com/adf/config/properties"
+            xmlns:mdsC="http://xmlns.oracle.com/adf/mds/config"
+            xmlns:rcs="http://xmlns.oracle.com/adf/rcs/adf-config"
+            xmlns:rcv="http://xmlns.oracle.com/adf/rcs/viewer/adf-config"
+            xmlns:searchC="http://xmlns.oracle.com/webcenter/search/config"
+            xmlns:relC="http://xmlns.oracle.com/webcenter/relationship/config"
+            xmlns:portlet="http://xmlns.oracle.com/adf/portlet/config"
+            xmlns:collabC="http://xmlns.oracle.com/webcenter/collab/config"
+            xmlns:tagC="http://xmlns.oracle.com/webcenter/tagging/config"
+            xmlns:pe="http://xmlns.oracle.com/adf/pageeditor/config"
+            xmlns:portal="http://xmlns.oracle.com/webcenter/portal/config">
+  <adf-adfm-config xmlns="http://xmlns.oracle.com/adfm/config">
+    <defaults useBindVarsForViewCriteriaLiterals="true"/>
+    <startup>
+      <amconfig-overrides>
+        <config:Database jbo.locking.mode="optimistic"/>
+      </amconfig-overrides>
+    </startup>
+  </adf-adfm-config>
+  <adf:adf-properties-child xmlns="http://xmlns.oracle.com/adf/config/properties">
+    <adf-property name="adfAppUID" value="WebCenterTemplate.devguide"/>
+  </adf:adf-properties-child>
+  <adf-security-child xmlns="http://xmlns.oracle.com/adf/security/config">
+    <JaasSecurityContext initialContextFactoryClass="oracle.adf.share.security.JAASInitialContextFactory"
+                         jaasProviderClass="oracle.adf.share.security.providers.jps.JpsSecurityContext"
+                         authorizationEnforce="true"
+                         authenticationRequire="true"/>
+    <CredentialStoreContext credentialStoreClass="oracle.adf.share.security.providers.jps.CSFCredentialStore"
+                            credentialStoreLocation="../../src/META-INF/jps-config.xml"/>
+  </adf-security-child>
+  <rcs:adf-rcs-config>
+    <rcs:rcs-config>
+      <rcs:catalog-config default-scope="/"
+                          default-registry="/oracle/webcenter/portalapp/catalogs/catalog-registry.xml"/>
+      <rcs:navigation-config default-scope="/"
+                             default-registry="/oracle/webcenter/portalapp/navigations/navigation-registry.xml"/>
+      <rcs:security-manager class-name="oracle.webcenter.portalframework.genericsiteresources.internal.security.CatalogSecurityManager"/>
+    </rcs:rcs-config>
+  </rcs:adf-rcs-config>
+  <rcv:rcv-config>
+    <rcv:default-catalog catalog-name="/oracle/webcenter/portalapp/catalogs/default-catalog.xml"/>
+    <rcv:catalog-selector class-name="oracle.webcenter.portalframework.sitestructure.rc.PortalCatalogSelector"/>
+  </rcv:rcv-config>
+  <adf-resourcebundle-config xmlns="http://xmlns.oracle.com/adf/resourcebundle/config">
+    <applicationBundleName>
+      resourcebundles/xliffBundles/WebCenterTemplateOverrideBundle
+    </applicationBundleName>
+    <bundleList>
+      <bundleId override="true">
+        oracle.adf.view.page.editor.resource.ComposerOverrideBundle
+      </bundleId>
+    </bundleList>
+  </adf-resourcebundle-config>
+  <searchC:adf-search-config xmlns="http://xmlns.oracle.com/webcenter/search/config">
+    <display-properties>
+      <common numSavedSearches="5"/>
+      <region-specific>
+        <usage id="simpleSearchResultUIMetadata" numServiceRows="5"/>
+        <usage id="searchResultUIMetadata" numServiceRows="5"/>
+        <usage id="localToolbarRegion" numServiceRows="5"/>
+      </region-specific>
+    </display-properties>
+    <execution-properties timeoutMs="3000" prepareTimeoutMs="1000"/>
+    <crawl-properties fullCrawlInterval="P5D" enableWcServicesCrawl="true"
+                      enableWcDiscussionsCrawl="true" enableWcUcmCrawl="true"/>
+    <ses-properties>
+      <connection/>
+      <data-group/>
+    </ses-properties>
+  </searchC:adf-search-config>
+  <adf-relationship-config xmlns="http://xmlns.oracle.com/webcenter/relationship/config"/>
+  <portlet:adf-portlet-config xmlns="http://xmlns.oracle.com/adf/portlet/config">
+    <cacheSettings enabled="true">
+      <maxSize>
+        10000000
+      </maxSize>
+    </cacheSettings>
+    <cacheSettings>
+      <maxSize>
+        10000000
+      </maxSize>
+      <subscriber default="true">
+        <systemLevel>
+          <maxSize>
+            5000000
+          </maxSize>
+        </systemLevel>
+        <userLevel>
+          <maxSize>
+            8000000
+          </maxSize>
+        </userLevel>
+      </subscriber>
+    </cacheSettings>
+    <defaultTimeout>
+      20
+    </defaultTimeout>
+    <minimumTimeout>
+      1
+    </minimumTimeout>
+    <maximumTimeout>
+      60
+    </maximumTimeout>
+    <applicationStriping>
+      false
+    </applicationStriping>
+  </portlet:adf-portlet-config>
+  <collabC:adf-collaboration-config>
+    <service-config xmlns="http://xmlns.oracle.com/webcenter/collab/config"
+                    serviceId="oracle.webcenter.collab.rtc">
+      <!-- The currently selected RTC connection -->
+      <!--property name="selected.connection" value=""/-->
+      <property name="auto.login" value="false"/>
+    </service-config>
+  </collabC:adf-collaboration-config>
+  <adf-tagging-config xmlns="http://xmlns.oracle.com/webcenter/tagging/config"/>
+  <pe:page-editor-config>
+    <pe:security-config>
+      <pe:security-policies>
+        <pe:security-policy name="customPagePolicy" override="pagePolicy">
+          <pe:policy-class>oracle.webcenter.security.policy.WCPageSecurityPolicy</pe:policy-class>
+        </pe:security-policy>
+        <pe:security-policy name="customTFPolicy" override="taskFlowPolicy">
+          <pe:policy-class>oracle.webcenter.security.policy.WCTaskflowSecurityPolicy</pe:policy-class>
+        </pe:security-policy>
+      </pe:security-policies>
+    </pe:security-config>
+  </pe:page-editor-config>
+  <portal:adf-portal-config>
+    <portal:preferences>
+      <portal:preference id="oracle.webcenter.portalapp.navigation.model"
+                         desc="Default Navigation Model"
+                         value="/oracle/webcenter/portalapp/navigations/default-navigation-model.xml"
+                         resourceType="navigation" display="true"/>
+      <portal:preference id="oracle.webcenter.portalapp.resourcecatalog"
+                         desc="Default Resource Catalog"
+                         value="/oracle/webcenter/portalapp/catalogs/default-catalog.xml"
+                         resourceType="ResourceCatalog" display="true"/>
+      <portal:preference id="oracle.webcenter.portalapp.pagetemplate.pageTemplate"
+                         desc="Default Page Template"
+                         value="/oracle/webcenter/portalapp/pagetemplates/pageTemplate_globe.jspx"
+                         resourceType="Template" display="true"/>
+      <portal:preference id="oracle.webcenter.portalapp.navigation.renderer"
+                         desc="Default Navigation Renderer"
+                         value="/oracle/webcenter/portalapp/pages/navigation-renderer.jspx"
+                         display="false"/>
+      <portal:preference id="oracle.webcenter.portalapp.skin"
+                         desc="Default Portal Skin" value="portal"
+                         resourceType="Skin" display="true"/>
+      <portal:preference id="oracle.webcenter.portalapp.sitemap"
+                         desc="Default Sitemap EL"
+                         value="#{navigationContext.defaultNavigationModel.defaultSiteMap}"
+                         resourceType="Sitemap" display="true"/>
+      <portal:preference id="oracle.webcenter.portalapp.baseresourceurl"
+                         desc="Default Base Resource URL EL"
+                         value="#{request.scheme}://#{request.serverName}:#{request.serverPort}#{request.contextPath}"
+                         resourceType="BaseResourceURL" display="true"/>
+    </portal:preferences>
+    <portal:resource-mappings>
+      <portal:resource-mapping path="/"
+                               url-prefix="#{request.scheme}://#{request.serverName}:#{request.serverPort}#{request.contextPath}"/>
+    </portal:resource-mappings>
+  </portal:adf-portal-config>
+  <adf-faces-config xmlns="http://xmlns.oracle.com/adf/faces/config">
+    <persistent-change-manager>
+      <persistent-change-manager-class>
+        oracle.adf.view.rich.change.MDSDocumentChangeManager
+      </persistent-change-manager-class>
+    </persistent-change-manager>
+    <taglib-config>
+      <taglib uri="http://xmlns.oracle.com/adf/faces/customizable">
+        <tag name="showDetailFrame">
+          <persist-operations>
+            all
+          </persist-operations>
+          <attribute name="expansionMode">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+          <attribute name="contentStyle">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+        <tag name="panelCustomizable">
+          <persist-operations>
+            all
+          </persist-operations>
+        </tag>
+      </taglib>
+      <taglib uri="http://xmlns.oracle.com/adf/pageeditor">
+        <tag name="layoutCustomizable">
+          <attribute name="type">
+            <persist-changes>
+              true
+            </persist-changes>
+          </attribute>
+        </tag>
+      </taglib>
+    </taglib-config>
+  </adf-faces-config>
+  <mdsC:adf-mds-config version="11.1.1.000">
+    <mds-config xmlns="http://xmlns.oracle.com/mds/config">
+      <persistence-config>
+        <metadata-namespaces>
+          <namespace path="/oracle/adf/share/prefs"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/lifecycle/importexport"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/lock"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/rc"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/persdef/"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/shared/oracle/wcps"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/xliffBundles/"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/search/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/framework/scope/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/page/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/pageDefs"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/adf/portlet"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/adf/portletappscope"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/doclib/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/portalapp"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/siteresources/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/security/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/siteresources/shared"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+          <namespace path="/oracle/webcenter/quicklinks/scopedMD"
+                     metadata-store-usage="WebCenterFileMetadataStore"/>
+        </metadata-namespaces>
+        <metadata-store-usages>
+          <metadata-store-usage id="WebCenterFileMetadataStore"
+                                default-cust-store="true" deploy-target="true">
+            <metadata-store class-name="oracle.mds.dt.persistence.stores.file.SrcControlFileMetadataStore">
+              <property name="metadata-path" value="../../mds"/>
+            </metadata-store>
+          </metadata-store-usage>
+        </metadata-store-usages>
+        <retry-connection enabled="true"/>
+      </persistence-config>
+      <cust-config>
+        <match path="/oracle/webcenter/siteresources/scopedMD/"/>
+        <match path="/oracle/webcenter/quicklinks/scopedMD/"/>
+        <match>
+          <customization-class name="oracle.adf.share.config.SiteCC"/>
+        </match>
+      </cust-config>
+      <cache-config>
+        <max-size-kb>100000</max-size-kb>
+      </cache-config>
+    </mds-config>
+  </mdsC:adf-mds-config>
+</adf-config>

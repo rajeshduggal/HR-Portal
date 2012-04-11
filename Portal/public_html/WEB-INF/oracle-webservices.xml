@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oracle-webservices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://xmlns.oracle.com/oracleas/schema/11/oracle-webservices-11_1.xsd" schema-major-version="11" schema-minor-version="1" deployment-version="" deployment-time="12f5988f06f" databinding-mode="jaxrpc">
+  <webservice-description name="WSRP_v1_Service" strictJaxrpcValidation="false" searchSchema="false">
+    <expose-wsdl>true</expose-wsdl>
+    <expose-testpage>true</expose-testpage>
+    <port-component name="WSRPBaseService" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v1:bind}WSRP_v1_Markup_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="performBlockingInteraction" inputName="performBlockingInteraction" outputName="performBlockingInteractionResponse" input="{urn:oasis:names:tc:wsrp:v1:types}performBlockingInteraction" use="literal"/>
+        <operation name="getMarkup" inputName="getMarkup" outputName="getMarkupResponse" input="{urn:oasis:names:tc:wsrp:v1:types}getMarkup" use="literal"/>
+        <operation name="releaseSessions" inputName="releaseSessions" outputName="releaseSessionsResponse" input="{urn:oasis:names:tc:wsrp:v1:types}releaseSessions" use="literal"/>
+        <operation name="initCookie" inputName="initCookie" outputName="initCookieResponse" input="{urn:oasis:names:tc:wsrp:v1:types}initCookie" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v1.bind.runtime.WSRP_v1_Markup_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v1:wsdl" localpart="WSRP_v1_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRPBaseService</servlet-link>
+    </port-component>
+    <port-component name="WSRPServiceDescriptionService" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v1:bind}WSRP_v1_ServiceDescription_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="getServiceDescription" inputName="getServiceDescription" outputName="getServiceDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v1:types}getServiceDescription" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v1.bind.runtime.WSRP_v1_ServiceDescription_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v1:wsdl" localpart="WSRP_v1_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRPServiceDescriptionService</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <port-component name="WSRPPortletManagementService" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v1:bind}WSRP_v1_PortletManagement_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="destroyPortlets" inputName="destroyPortlets" outputName="destroyPortletsResponse" input="{urn:oasis:names:tc:wsrp:v1:types}destroyPortlets" use="literal"/>
+        <operation name="getPortletProperties" inputName="getPortletProperties" outputName="getPortletPropertiesResponse" input="{urn:oasis:names:tc:wsrp:v1:types}getPortletProperties" use="literal"/>
+        <operation name="clonePortlet" inputName="clonePortlet" outputName="clonePortletResponse" input="{urn:oasis:names:tc:wsrp:v1:types}clonePortlet" use="literal"/>
+        <operation name="setPortletProperties" inputName="setPortletProperties" outputName="setPortletPropertiesResponse" input="{urn:oasis:names:tc:wsrp:v1:types}setPortletProperties" use="literal"/>
+        <operation name="getPortletDescription" inputName="getPortletDescription" outputName="getPortletDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v1:types}getPortletDescription" use="literal"/>
+        <operation name="getPortletPropertyDescription" inputName="getPortletPropertyDescription" outputName="getPortletPropertyDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v1:types}getPortletPropertyDescription" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v1.bind.runtime.WSRP_v1_PortletManagement_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v1:wsdl" localpart="WSRP_v1_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRPPortletManagementService</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <port-component name="WSRPRegistrationService" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v1:bind}WSRP_v1_Registration_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="modifyRegistration" inputName="modifyRegistration" outputName="modifyRegistrationResponse" input="{urn:oasis:names:tc:wsrp:v1:types}modifyRegistration" use="literal"/>
+        <operation name="register" inputName="register" outputName="registerResponse" input="{urn:oasis:names:tc:wsrp:v1:types}register" use="literal"/>
+        <operation name="deregister" inputName="deregister" outputName="deregisterResponse" input="{urn:oasis:names:tc:wsrp:v1:types}deregister" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v1.bind.runtime.WSRP_v1_Registration_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v1:wsdl" localpart="WSRP_v1_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRPRegistrationService</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <enable-mex>true</enable-mex>
+  </webservice-description>
+  <webservice-description name="WSRP_v2_Service" strictJaxrpcValidation="false" searchSchema="false">
+    <expose-wsdl>true</expose-wsdl>
+    <expose-testpage>true</expose-testpage>
+    <port-component name="WSRP_v2_ServiceDescription_Service" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v2:bind}WSRP_v2_ServiceDescription_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="getServiceDescription" inputName="getServiceDescription" outputName="getServiceDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getServiceDescription" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v2.bind.runtime.WSRP_v2_ServiceDescription_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v2:wsdl" localpart="WSRP_v2_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRP_v2_ServiceDescription_Service</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <port-component name="WSRP_v2_PortletManagement_Service" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v2:bind}WSRP_v2_PortletManagement_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="exportPortlets" inputName="exportPortlets" outputName="exportPortletsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}exportPortlets" use="literal"/>
+        <operation name="setPortletProperties" inputName="setPortletProperties" outputName="setPortletPropertiesResponse" input="{urn:oasis:names:tc:wsrp:v2:types}setPortletProperties" use="literal"/>
+        <operation name="importPortlets" inputName="importPortlets" outputName="importPortletsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}importPortlets" use="literal"/>
+        <operation name="destroyPortlets" inputName="destroyPortlets" outputName="destroyPortletsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}destroyPortlets" use="literal"/>
+        <operation name="getPortletProperties" inputName="getPortletProperties" outputName="getPortletPropertiesResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getPortletProperties" use="literal"/>
+        <operation name="copyPortlets" inputName="copyPortlets" outputName="copyPortletsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}copyPortlets" use="literal"/>
+        <operation name="setPortletsLifetime" inputName="setPortletsLifetime" outputName="setPortletsLifetimeResponse" input="{urn:oasis:names:tc:wsrp:v2:types}setPortletsLifetime" use="literal"/>
+        <operation name="clonePortlet" inputName="clonePortlet" outputName="clonePortletResponse" input="{urn:oasis:names:tc:wsrp:v2:types}clonePortlet" use="literal"/>
+        <operation name="releaseExport" inputName="releaseExport" outputName="releaseExportResponse" input="{urn:oasis:names:tc:wsrp:v2:types}releaseExport" use="literal"/>
+        <operation name="getPortletDescription" inputName="getPortletDescription" outputName="getPortletDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getPortletDescription" use="literal"/>
+        <operation name="getPortletsLifetime" inputName="getPortletsLifetime" outputName="getPortletsLifetimeResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getPortletsLifetime" use="literal"/>
+        <operation name="getPortletPropertyDescription" inputName="getPortletPropertyDescription" outputName="getPortletPropertyDescriptionResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getPortletPropertyDescription" use="literal"/>
+        <operation name="setExportLifetime" inputName="setExportLifetime" outputName="setExportLifetimeResponse" input="{urn:oasis:names:tc:wsrp:v2:types}setExportLifetime" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v2.bind.runtime.WSRP_v2_PortletManagement_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v2:wsdl" localpart="WSRP_v2_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRP_v2_PortletManagement_Service</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <port-component name="WSRP_v2_Markup_Service" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v2:bind}WSRP_v2_Markup_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="performBlockingInteraction" inputName="performBlockingInteraction" outputName="performBlockingInteractionResponse" input="{urn:oasis:names:tc:wsrp:v2:types}performBlockingInteraction" use="literal"/>
+        <operation name="releaseSessions" inputName="releaseSessions" outputName="releaseSessionsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}releaseSessions" use="literal"/>
+        <operation name="getMarkup" inputName="getMarkup" outputName="getMarkupResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getMarkup" use="literal"/>
+        <operation name="handleEvents" inputName="handleEvents" outputName="handleEventsResponse" input="{urn:oasis:names:tc:wsrp:v2:types}handleEvents" use="literal"/>
+        <operation name="initCookie" inputName="initCookie" outputName="initCookieResponse" input="{urn:oasis:names:tc:wsrp:v2:types}initCookie" use="literal"/>
+        <operation name="getResource" inputName="getResource" outputName="getResourceResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getResource" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v2.bind.runtime.WSRP_v2_Markup_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v2:wsdl" localpart="WSRP_v2_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRP_v2_Markup_Service</servlet-link>
+    </port-component>
+    <port-component name="WSRP_v2_Registration_Service" style="document" bindingQName="{urn:oasis:names:tc:wsrp:v2:bind}WSRP_v2_Registration_Binding_SOAP" enabled="true" schemaValidateInput="false">
+      <operations>
+        <operation name="modifyRegistration" inputName="modifyRegistration" outputName="modifyRegistrationResponse" input="{urn:oasis:names:tc:wsrp:v2:types}modifyRegistration" use="literal"/>
+        <operation name="register" inputName="register" outputName="registerResponse" input="{urn:oasis:names:tc:wsrp:v2:types}register" use="literal"/>
+        <operation name="getRegistrationLifetime" inputName="getRegistrationLifetime" outputName="getRegistrationLifetimeResponse" input="{urn:oasis:names:tc:wsrp:v2:types}getRegistrationLifetime" use="literal"/>
+        <operation name="setRegistrationLifetime" inputName="setRegistrationLifetime" outputName="setRegistrationLifetimeResponse" input="{urn:oasis:names:tc:wsrp:v2:types}setRegistrationLifetime" use="literal"/>
+        <operation name="deregister" inputName="deregister" outputName="deregisterResponse" input="{urn:oasis:names:tc:wsrp:v2:types}deregister" use="literal"/>
+      </operations>
+      <!-- start:deployment time generated info -->
+      <deployment>
+        <tie-class-name>oasis.names.tc.wsrp.v2.bind.runtime.WSRP_v2_Registration_Binding_SOAP_Tie</tie-class-name>
+        <service-qname namespaceURI="urn:oasis:names:tc:wsrp:v2:wsdl" localpart="WSRP_v2_Service"/>
+        <soap-version>soap1.1</soap-version>
+      </deployment>
+      <!-- end:deployment time generated info   -->
+          <servlet-link>WSRP_v2_Registration_Service</servlet-link>
+<policy-references>
+<policy-reference enabled="true" uri="oracle/no_authentication_service_policy" category="security"/>
+</policy-references>
+    </port-component>
+    <enable-mex>true</enable-mex>
+  </webservice-description>
+</oracle-webservices>

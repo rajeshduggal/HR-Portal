@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogDefinition id="DefaultCatalog" visible="#{true}"
+                   resourceBundle="oracle.webcenter.portalapp.catalogs.DefaultCatalogBundle"
+                   definitionFilter="oracle.webcenter.portalapp.catalogs.DefaultCatalogFilter"
+                   xmlns="http://xmlns.oracle.com/adf/rcs/catalog">
+  <attributes>
+    <attribute value="DEFAULT_CATALOG.TITLE" attributeId="Title"
+               isKey="true"/>
+    <attribute value="DEFAULT_CATALOG.DESCRIPTION"
+               attributeId="Description" isKey="true"/>
+    <attribute value="DEFAULT_CATALOG.KEYWORDS"
+               attributeId="Subject" isKey="true"/>
+    <attribute value="/adf/webcenter/folderclosed_qualifier.png"
+               attributeId="IconURI"/>
+  </attributes>
+  <contents xmlns="http://xmlns.oracle.com/adf/rcs/catalog">
+    <!-- Alerts and Updates Folder -->
+    <folder visible="#{true}" id="alertsUpdatesFolder">
+      <attributes>
+        <attribute value="ALERTS_UPDATES_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="ALERTS_UPDATES_FOLDER.DESCRIPTION"
+                   attributeId="Description" isKey="true"/>
+        <attribute value="ALERTS_UPDATES_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/folderdiscussions_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- Popular Topics -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="forumPopularTopicView"
+             url="taskflow://oracle/webcenter/collab/forum/view/taskflows/popularTopic-task-flow.xml#forum-popularTopic">
+          <attributes>
+            <attribute value="FORUM_POPULAR_TOPICS_VIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="FORUM_POPULAR_TOPICS_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="FORUM_POPULAR_TOPICS_VIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.collab.forum"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/hottopic_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Recent Topics -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="forumRecentTopicView"
+             url="taskflow://oracle/webcenter/collab/forum/view/taskflows/recentTopic-task-flow.xml#forum-recentTopic">
+          <attributes>
+            <attribute value="FORUM_RECENT_TOPICS_VIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="FORUM_RECENT_TOPICS_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="FORUM_RECENT_TOPICS_VIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.collab.forum"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/recenttopic_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Recent Documents -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibRecentView"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/recentDocuments.xml#doclib-recent-documents">
+          <attributes>
+            <attribute value="DOCLIB_RECENT_VIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_RECENT_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_RECENT_VIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/recentfile_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="auto" attributeId="attr.stretchContent"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Announcements -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="announcementsMiniView"
+             url="taskflow://oracle/webcenter/collab/announcement/view/taskflows/mini-view-definition.xml#announcement-mini-view">
+          <attributes>
+            <attribute value="ANNOUNCEMENTS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="ANNOUNCEMENTS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="ANNOUNCEMENTS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.announcement"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/announcements_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Worklist -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="worklist"
+             url="taskflow://oracle/webcenter/worklist/view/jsf/taskFlowDefs/worklist.xml#worklist">
+          <attributes>
+            <attribute value="WORKLIST.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="WORKLIST.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="WORKLIST.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.worklist"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/worklist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- RSS Viewer -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="rssViewer"
+             url="taskflow://oracle/webcenter/rssviewer/view/jsf/fragments/RSSViewerTaskFlow.xml#RSSViewerTaskFlow">
+          <attributes>
+            <attribute value="RSS_VIEWER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="RSS_VIEWER.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="RSS_VIEWER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.rss"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/rss_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+            <attribute value="${''}" attributeId="parameter.rssFeedLocation"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Activity Stream -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="activityStreamingMainView"
+             url="taskflow://oracle/webcenter/activitystreaming/controller/taskflows/activity-streaming-mainview.xml#activity-streaming-mainview">
+          <attributes>
+            <attribute value="ACTIVITY_STREAM_MAINVIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="ACTIVITY_STREAM_MAINVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/activitystream_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="ACTIVITY_STREAM_MAINVIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.activitystreaming"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Activity Stream Summary -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="activityStreamingMiniView"
+             url="taskflow://oracle/webcenter/activitystreaming/controller/taskflows/activity-streaming-miniview.xml#activity-streaming-miniview">
+          <attributes>
+            <attribute value="ACTIVITY_STREAM_MINIVIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="ACTIVITY_STREAM_MINIVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/activitystream_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="ACTIVITY_STREAM_MINIVIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.activitystreaming"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.profileUserId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Subscription Viewer -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="SubscriptionsViewer"
+             url="taskflow://oracle/webcenter/notification/view/jsf/regions/SubscriptionsViewer.xml#SubscriptionsViewer">
+          <attributes>
+            <attribute value="SUBSCRIPTION_VIEWER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="SUBSCRIPTION_VIEWER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="SUBSCRIPTION_VIEWER.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.notification"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/subscribe_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+    <!-- Analytics Folder -->
+    <customFolder id="analyticsServiceFolder" visible="#{true}"
+                  factoryClass="oracle.webcenter.analytics.view.rc.ASServiceContextFactory">
+      <attributes>
+        <attribute value="ANALYTICS_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="ANALYTICS_FOLDER.DESCRIPTION"
+                   attributeId="Description" isKey="true"/>
+        <attribute value="ANALYTICS_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.analytics"
+                   attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/folderanalytics_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+    </customFolder>
+    <!-- Content Management Folder -->
+    <folder visible="#{true}" id="contentMgmtFolder">
+      <attributes>
+        <attribute value="DOCLIB_DOCUMENT_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="DOCLIB_DOCUMENT_FOLDER.DESCRIPTION"
+                   attributeId="Description" isKey="true"/>
+        <attribute value="DOCLIB_DOCUMENT_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.doclib"
+                   attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/folderlibrary_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- All Documents -->
+        <customFolder id="doclibAllDocuments" visible="#{true}"
+                      factoryClass="oracle.webcenter.content.model.rc.CustomFolderContextFactory">
+          <attributes>
+            <attribute value="DOCLIB_ALL_DOCUMENTS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_ALL_DOCUMENTS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_ALL_DOCUMENTS.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderlibrary_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- Personal Documents -->
+        <customFolder id="doclibPersonalDocuments" visible="#{true}"
+                      factoryClass="oracle.webcenter.doclib.model.rc.DefaultFolderContextFactory">
+          <attributes>
+            <attribute value="DOCLIB_PERSONAL_DOCUMENTS.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="DOCLIB_PERSONAL_DOCUMENTS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_PERSONAL_DOCUMENTS.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderpersonallibrary_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- Documents Folder Viewer -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibFolderViewer"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/folderViewer/folderView.xml#doclib-folder-viewer">
+          <attributes>
+            <attribute value="DOCLIB_FOLDER_VIEWER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_FOLDER_VIEWER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_FOLDER_VIEWER.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/managelibrary_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="auto" attributeId="attr.stretchContent"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Documents List Viewer -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibListViewer"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/docListViewer.xml#doclib-document-list-viewer">
+          <attributes>
+            <attribute value="DOCLIB_LIST_VIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_LIST_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_LIST_VIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/viewerlibrary_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="auto" attributeId="attr.stretchContent"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Documents Explorer -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibExplorer"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/explore/explorer.xml#doclib-explorer">
+          <attributes>
+            <attribute value="DOCLIB_EXPLORER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_EXPLORER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_EXPLORER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/managelibrary_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="auto" attributeId="attr.stretchContent"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Document Tree Navigator-->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibNavigator"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/treeNav/treeNavigator.xml#doclib-navigator">
+          <attributes>
+            <attribute value="DOCLIB_NAVIGATOR.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_NAVIGATOR.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_NAVIGATOR.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/managelibrary_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="auto" attributeId="attr.stretchContent"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Content Presenter -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclibContentPresenter"
+             url="taskflow://oracle/webcenter/doclib/view/jsf/taskflows/presenter/contentPresenter.xml#doclib-content-presenter">
+          <attributes>
+            <attribute value="DOCLIB_CONTENT_PRESENTER.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="DOCLIB_CONTENT_PRESENTER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_CONTENT_PRESENTER.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/contentpresenter_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                       attributeId="attr.background" isKey="false"/>
+            <attribute value="#{changeModeBean.inEditMode}"
+                       attributeId="attr.displayHeader" isKey="false"/>
+            <attribute value="none" attributeId="attr.showMinimizeAction"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+    <!-- Mashups Folder -->
+    <folder visible="#{true}" id="mashupsFolder">
+      <attributes>
+        <attribute value="MASHUPS_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="MASHUPS_FOLDER.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="MASHUPS_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.portlet"
+                   attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/foldermashups_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- Data Controls Folder -->
+        <folder visible="#{true}" id="dataControlsFolder1">
+          <attributes>
+            <attribute value="DATACONTROL_FOLDER.TITLE" isKey="true"
+                       attributeId="Title"/>
+            <attribute value="DATACONTROL_FOLDER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DATACONTROL_FOLDER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                       isKey="false" attributeId="IconURI"/>
+          </attributes>
+          <contents>
+            <!-- Runtime Data Controls -->
+            <customFolder id="rtDataControls1" visible="#{true}"
+                          factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DataControlContextFactory"
+                          insertFolderContents="true">
+              <attributes>
+                <attribute value="RT_DATACONTROL.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="RT_DATACONTROL.DESCRIPTION"
+                           attributeId="Description" isKey="true"/>
+                <attribute value="RT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                           attributeId="IconURI"/>
+              </attributes>
+            </customFolder>
+            <!-- Design-time Data Controls -->
+            <!--<customFolder id="dtDataControls1"
+                          visible="#{true}"
+                          factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DTDataControlContextFactory"
+                          insertFolderContents="true">
+              <attributes>
+                <attribute value="DT_DATACONTROL.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="DT_DATACONTROL.DESCRIPTION"
+                           attributeId="Description" isKey="true"/>
+                <attribute value="DT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                           attributeId="IconURI"/>
+              </attributes>
+            </customFolder>-->
+          </contents>
+        </folder>
+        <!-- Taskflows -->
+        <customFolder id="taskflows" visible="#{true}"
+                      factoryClass="oracle.webcenter.datacomposer.internal.adapter.taskflow.TaskflowContextFactory">
+          <attributes>
+            <attribute value="TASKFLOW.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="TASKFLOW.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="TASKFLOW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- OmniPortlet -->
+        <resource id="omniportlet" repository="wc-OmniPortlet" path="OmniPortlet"
+                  visible="#{true}">
+          <attributes>
+            <attribute value="OMNI_PORTLET.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="OMNI_PORTLET.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="OMNI_PORTLET.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.portlet"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/mashupsedit_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents/>
+        </resource>
+        <!-- Ensemble Content Provider -->
+        <customContent id="ensembleContentProvider"
+                       contentProviderClass="com.oracle.ensemble.interop.adf.EnsembleContentProvider"/>
+      </contents>
+    </folder>
+    <!-- Portlets Folder -->
+    <folder visible="#{true}" id="portletsFolder">
+      <attributes>
+        <attribute value="PORTLETS_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="PORTLETS_FOLDER.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="PORTLETS_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.portlet"
+                   attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/folderportlet_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- Portlet Administration Folder -->
+        <folder visible="#{true}" id="adminFolder">
+          <attributes>
+            <attribute value="ADMIN_FOLDER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="ADMIN_FOLDER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="ADMIN_FOLDER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.admin"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/portletAdmin_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+          <contents>
+            <!-- Producer Registration -->
+            <url visible="#{true}"
+                 factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+                 id="producer"
+                 url="taskflow://oracle/webcenter/admin/view/jsf/taskFlowDefs/producer.xml#producer">
+              <attributes>
+                <attribute value="PRODUCER.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="PRODUCER.DESCRIPTION"
+                           attributeId="Description" isKey="true"/>
+                <attribute value="PRODUCER.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="oracle.webcenter.admin"
+                           attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+                <attribute value="/adf/webcenter/producerConn_qualifier.png"
+                           attributeId="IconURI"/>
+                <attribute value="height:211px" attributeId="attr.contentStyle"
+                           isKey="false"/>
+              </attributes>
+              <contents/>
+            </url>
+            <!-- External Application -->
+            <url visible="#{true}"
+                 factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+                 id="extapp"
+                 url="taskflow://oracle/webcenter/admin/view/jsf/taskFlowDefs/extapp.xml#extapp">
+              <attributes>
+                <attribute value="EXTAPP.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="EXTAPP.DESCRIPTION" attributeId="Description"
+                           isKey="true"/>
+                <attribute value="EXTAPP.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="oracle.webcenter.admin"
+                           attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+                <attribute value="/adf/webcenter/externalappConn_qualifier.png"
+                           attributeId="IconURI"/>
+                <attribute value="height:211px" attributeId="attr.contentStyle"
+                           isKey="false"/>
+              </attributes>
+              <contents/>
+            </url>
+          </contents>
+        </folder>
+        <!-- All Portlets -->
+        <customFolder id="allPortlets" visible="#{true}"
+                      factoryClass="oracle.adfinternal.model.portlet.rc.ptlprovider.PortletProducerContextFactory"
+                      insertFolderContents="true">
+          <attributes>
+            <attribute value="PORTLETS_FOLDER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="PORTLETS_FOLDER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="PORTLETS_FOLDER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.portlet"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderportlet_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+      </contents>
+    </folder>
+    <!-- Polls and Surveys Folder -->
+    <folder visible="#{true}" id="pollsSurveysFolder">
+      <attributes>
+        <attribute value="SURVEYS_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="SURVEYS_FOLDER.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="SURVEYS_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="oracle.webcenter.collab.survey"
+                   attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+        <attribute value="/adf/webcenter/folderbargraph_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- Polls Manager -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="surveyManagerView"
+             url="taskflow://oracle/webcenter/collab/survey/view/jsf/taskflows/list-surveys-definition.xml#list-surveys">
+          <attributes>
+            <attribute value="SURVEYS_MANAGER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="SURVEYS_MANAGER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="SURVEYS_MANAGER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.survey"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/managebargraph_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Take Polls -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="takePollsView"
+             url="taskflow://oracle/webcenter/collab/survey/view/jsf/taskflows/take-polls-definition.xml#take-polls">
+          <attributes>
+            <attribute value="TAKE_SURVEYS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="TAKE_SURVEYS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="TAKE_SURVEYS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.survey"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/worklist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Quick Poll Results -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="quickPollView"
+             url="taskflow://oracle/webcenter/collab/survey/view/jsf/taskflows/quick-poll-definition.xml#quick-poll">
+          <attributes>
+            <attribute value="QUICK_POLL.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="QUICK_POLL.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="QUICK_POLL.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.survey"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/managebargraph_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- View Poll Results -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="viewPollResultsView"
+             url="taskflow://oracle/webcenter/collab/survey/view/jsf/taskflows/view-results-definition.xml#view-results">
+          <attributes>
+            <attribute value="VIEW_POLL_RESULTS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="VIEW_POLL_RESULTS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="VIEW_POLL_RESULTS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.survey"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/viewbargraph_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+    <!-- Social and Communication Folder -->
+    <folder visible="#{true}" id="socialCommFolder">
+      <attributes>
+        <attribute value="SOCIAL_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="SOCIAL_FOLDER.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="SOCIAL_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/folderpeople_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- Lists -->
+        <customFolder id="groupLists" visible="#{true}"
+                      factoryClass="oracle.webcenter.list.view.rc.ListServiceContextFactory">
+          <attributes>
+            <attribute value="LISTS_CUSTOM_FOLDER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="LISTS_CUSTOM_FOLDER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="LISTS_CUSTOM_FOLDER.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.list"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- Message Board Summary -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="wallMiniView"
+             url="taskflow://oracle/webcenter/peopleconnections/wall/controller/taskflows/WallViewer.xml#WallViewer">
+          <attributes>
+            <attribute value="WALL_MINIVIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="WALL_MINIVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/messageboard_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="WALL_MINIVIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.wall"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userName" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Message Board -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="wallMainView"
+             url="taskflow://oracle/webcenter/peopleconnections/wall/controller/taskflows/WallDetailViewer.xml#WallDetailViewer">
+          <attributes>
+            <attribute value="WALL_MAINVIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="WALL_MAINVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/messageboard_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="WALL_MAINVIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.wall"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Organization View -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="orgView"
+             url="taskflow://oracle/webcenter/peopleconnections/profile/view/jsf/regions/orgview/organization-view.xml#organization-view">
+          <attributes>
+            <attribute value="ORG_VIEWER.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="ORG_VIEWER.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="/adf/webcenter/user_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="ORG_VIEWER.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.profile"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Profile Snapshot -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="profileSnapshot"
+             url="taskflow://oracle/webcenter/peopleconnections/view/jsf/regions/profile-snapshot.xml#profile-snapshot">
+          <attributes>
+            <attribute value="PROFILE_SNAPSHOT.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="PROFILE_SNAPSHOT.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/user_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="PROFILE_SNAPSHOT.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.profile"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Profile -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="extendedProfile"
+             url="taskflow://oracle/webcenter/peopleconnections/profile/view/jsf/regions/extended/extended-profile.xml#extended-profile">
+          <attributes>
+            <attribute value="EXTENDED_PROFILE.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="EXTENDED_PROFILE.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/user_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="EXTENDED_PROFILE.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.profile"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Profile Gallery -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="profileGallery"
+             url="taskflow://oracle/webcenter/peopleconnections/personalweb/view/jsf/regions/profile-gallery.xml#profile-gallery">
+          <attributes>
+            <attribute value="PROFILE_GALLERY.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="PROFILE_GALLERY.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/profilegallery_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="PROFILE_GALLERY.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.personalweb"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Connections -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="connectionsMainView"
+             url="taskflow://oracle/webcenter/peopleconnections/connections/controller/taskflows/connections-main-view-untabbed-taskflow.xml#connections-main-view-untabbed-taskflow">
+          <attributes>
+            <attribute value="CONNECTIONS_MAINVIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="CONNECTIONS_MAINVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/people_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="CONNECTIONS_MAINVIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.connections"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Connections - Card -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="tableOfConnections"
+             url="taskflow://oracle/webcenter/peopleconnections/connections/controller/taskflows/table-of-connections-taskflow.xml#table-of-connections-taskflow">
+          <attributes>
+            <attribute value="TABLE_OF_CONNECTIONS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="TABLE_OF_CONNECTIONS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/people_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="TABLE_OF_CONNECTIONS.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.connections"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userid" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Connections - Detailed View -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="connectionsDetailView"
+             url="taskflow://oracle/webcenter/peopleconnections/connections/controller/taskflows/connections-mini-view-advanced-taskflow.xml#connections-mini-view-advanced-taskflow">
+          <attributes>
+            <attribute value="CONNECTIONS_DETAIL_VIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="CONNECTIONS_DETAIL_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/people_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="CONNECTIONS_DETAIL_VIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.connections"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userId" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Connections - Quick View -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="connectionsMiniView"
+             url="taskflow://oracle/webcenter/peopleconnections/connections/controller/taskflows/connections-mini-view-taskflow.xml#connections-mini-view-taskflow">
+          <attributes>
+            <attribute value="CONNECTIONS_MINIVIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="CONNECTIONS_MINIVIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="/adf/webcenter/people_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="CONNECTIONS_MINIVIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.peopleconnections.connections"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="#{securityContext.userName}"
+                       attributeId="parameter.userid" isKey="false"/>
+            <attribute value="false" attributeId="attr.stretchContent"
+                       isKey="false"/>
+            <attribute value="never" attributeId="attr.showResizer"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Recommended Connections -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="activitygraphRecommendedConnections"
+             url="taskflow://view/oracle/webcenter/activitygraph/controller/taskflows/recommended-connections.xml#recommended-connections">
+          <attributes>
+            <attribute value="RECOMMENDED_CONNECTIONS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="RECOMMENDED_CONNECTIONS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="RECOMMENDED_CONNECTIONS.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.activitygraph"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/labellist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Similar Items -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="activitygraphSimilarItems"
+             url="taskflow://view/oracle/webcenter/activitygraph/controller/taskflows/similar-items.xml#similar-items">
+          <attributes>
+            <attribute value="SIMILAR_ITEMS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="SIMILAR_ITEMS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="SIMILAR_ITEMS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.activitygraph"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/labellist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Mail -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="myRecentEmail"
+             url="taskflow://oracle/webcenter/collab/mail/view/jsf/regions/mini-view-definition.xml#mail-mini-view">
+          <attributes>
+            <attribute value="MAIL_INBOX.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="MAIL_INBOX.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="MAIL_INBOX.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.mail"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/email_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Watched Topics -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="forumWatchedTopicsView"
+             url="taskflow://oracle/webcenter/collab/forum/view/taskflows/watchedTopic-task-flow.xml#forum-watchedTopic">
+          <attributes>
+            <attribute value="FORUM_WATCHED_TOPICS_VIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="FORUM_WATCHED_TOPICS_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="FORUM_WATCHED_TOPICS_VIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.collab.forum"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/viewtopics_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Watched Forums -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="forumWatchedForumView"
+             url="taskflow://oracle/webcenter/collab/forum/view/taskflows/watchedForum-task-flow.xml#forum-watchedForum">
+          <attributes>
+            <attribute value="FORUM_WATCHED_FORUM_VIEW.TITLE"
+                       attributeId="Title" isKey="true"/>
+            <attribute value="FORUM_WATCHED_FORUM_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="FORUM_WATCHED_FORUM_VIEW.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.collab.forum"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/viewdiscussions_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Forums -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="forumMiniView"
+             url="taskflow://oracle/webcenter/collab/forum/view/taskflows/miniview-task-flow.xml#forum-miniview">
+          <attributes>
+            <attribute value="FORUM_MINI_VIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="FORUM_MINI_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="FORUM_MINI_VIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.forum"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/discussions_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Calendar -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="calendarMainView"
+             url="taskflow://oracle/webcenter/collab/events/view/taskflows/calendar-main-view.xml#calendar-mainView">
+          <attributes>
+            <attribute value="EVENTS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="EVENTS.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="EVENTS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.collab.calendar.personal"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/events_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:331px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Blogs -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="doclib-blog-digest-viewer"
+             url="taskflow://oracle/webcenter/blog/view/jsf/taskflows/blogDigestViewer/blog-digest-viewer.xml#blog-viewer">
+          <attributes>
+            <attribute value="DOCLIB_BLOG_VIEW.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="DOCLIB_BLOG_VIEW.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DOCLIB_BLOG_VIEW.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.doclib"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/htmlfile_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+    <!-- Tagging and Search Folder -->
+    <folder visible="#{true}" id="taggingSearchFolder">
+      <attributes>
+        <attribute value="TAG_SEARCH_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="TAG_SEARCH_FOLDER.DESCRIPTION"
+                   attributeId="Description" isKey="true"/>
+        <attribute value="TAG_SEARCH_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/foldersearch_qualifier.png"
+                   attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <!-- All Saved Searches-->
+        <customFolder id="savedSearchesFolder" visible="#{true}"
+                      factoryClass="oracle.webcenter.search.view.rc.SearchServiceContextFactory">
+          <attributes>
+            <attribute value="SAVED_SEARCHES.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="SAVED_SEARCHES.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="SAVED_SEARCHES.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.search"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/foldersavedsearches_qualifier.png"
+                       attributeId="IconURI"/>
+          </attributes>
+        </customFolder>
+        <!-- Saved Searches List -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="searchMiniView"
+             url="taskflow://oracle/webcenter/search/controller/taskflows/allSavedSearches.xml#all-saved-searches">
+          <attributes>
+            <attribute value="SAVED_SEARCHES_LIST.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="SAVED_SEARCHES_LIST.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="SAVED_SEARCHES_LIST.KEYWORDS"
+                       attributeId="Subject" isKey="true"/>
+            <attribute value="oracle.webcenter.search"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/savedsearchesfile_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Similarly Tagged Items -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="tagsRelatedLinksView"
+             url="taskflow://oracle/webcenter/tagging/controller/taskflows/related-links.xml#tagging-related-links">
+          <attributes>
+            <attribute value="TAGS_RELATED_LINKS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="TAGS_RELATED_LINKS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="TAGS_RELATED_LINKS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.tagging"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/labellist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+            <attribute value="${'oracle.webcenter.page'}"
+                       attributeId="parameter.serviceId" isKey="false"/>
+            <attribute value="${pageDocBean.viewID}${pageDocBean.pageDef != null and pageDocBean.pageDef.customAttributeValueMap != null and pageDocBean.pageDef.customAttributeValueMap['WEBCENTER_SERVICE_ID'] != null ? boilerBean.persistableRequestParams : boilerBean.persistableRequestParamsForTagging}"
+                       attributeId="parameter.resourceId" isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Tags -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="tagsView"
+             url="taskflow://oracle/webcenter/tagging/controller/taskflows/tagging-personal-view.xml#tagging-personal-view">
+          <attributes>
+            <attribute value="TAGS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="TAGS.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="TAGS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.tagging"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/label_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Tag Cloud -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="tagCloud"
+             url="taskflow://oracle/webcenter/tagging/controller/taskflows/tag-selection.xml#tag-selection">
+          <attributes>
+            <attribute value="TAG_CLOUD.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="TAG_CLOUD.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="TAG_CLOUD.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.tagging"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/label_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+        <!-- Tag Cloud Related Items -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="tagCloudRelatedItems"
+             url="taskflow://oracle/webcenter/tagging/controller/taskflows/related-resources.xml#related-resources">
+          <attributes>
+            <attribute value="TAG_CLOUD_RELATED_ITEMS.TITLE" attributeId="Title" isKey="true"/>
+            <attribute value="TAG_CLOUD_RELATED_ITEMS.DESCRIPTION" attributeId="Description"
+                       isKey="true"/>
+            <attribute value="TAG_CLOUD_RELATED_ITEMS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="oracle.webcenter.tagging"
+                       attributeId="WEBCENTER_SERVICE_ID" isKey="false"/>
+            <attribute value="/adf/webcenter/labellist_qualifier.png"
+                       attributeId="IconURI"/>
+            <attribute value="height:211px" attributeId="attr.contentStyle"
+                       isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+    <!-- Web Development Folder -->
+    <folder visible="#{true}" id="webDevFolder">
+      <attributes>
+        <attribute value="WEB_DEV_FOLDER.TITLE" attributeId="Title"
+                   isKey="true"/>
+        <attribute value="WEB_DEV_FOLDER.DESCRIPTION" attributeId="Description"
+                   isKey="true"/>
+        <attribute value="WEB_DEV_FOLDER.KEYWORDS" attributeId="Subject"
+                   isKey="true"/>
+        <attribute value="/adf/webcenter/folderlayout_qualifier.png"
+                   isKey="false" attributeId="IconURI"/>
+      </attributes>
+      <contents>
+        <folder visible="#{true}" id="dataControlsFolder2">
+          <attributes>
+            <attribute value="DATACONTROL_FOLDER.TITLE" isKey="true"
+                       attributeId="Title"/>
+            <attribute value="DATACONTROL_FOLDER.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="DATACONTROL_FOLDER.KEYWORDS" isKey="true"
+                       attributeId="Subject"/>
+            <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                       isKey="false" attributeId="IconURI"/>
+          </attributes>
+          <contents>
+            <!-- Runtime Data Controls -->
+            <customFolder id="rtDataControls2" visible="#{true}"
+                          factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DataControlContextFactory"
+                          insertFolderContents="true">
+              <attributes>
+                <attribute value="RT_DATACONTROL.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="RT_DATACONTROL.DESCRIPTION"
+                           attributeId="Description" isKey="true"/>
+                <attribute value="RT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                           attributeId="IconURI"/>
+              </attributes>
+            </customFolder>
+            <!-- Design-time Data Controls -->
+            <!--<customFolder id="dtDataControls2"
+                          visible="#{true}"
+                          factoryClass="oracle.webcenter.datacomposer.internal.adapter.datacontrol.DTDataControlContextFactory"
+                          insertFolderContents="true">
+              <attributes>
+                <attribute value="DT_DATACONTROL.TITLE" attributeId="Title"
+                           isKey="true"/>
+                <attribute value="DT_DATACONTROL.DESCRIPTION"
+                           attributeId="Description" isKey="true"/>
+                <attribute value="DT_DATACONTROL.KEYWORDS" attributeId="Subject"
+                           isKey="true"/>
+                <attribute value="/adf/webcenter/folderlists_qualifier.png"
+                           attributeId="IconURI"/>
+              </attributes>
+            </customFolder>-->
+          </contents>
+        </folder>
+        <!-- Box -->
+        <component id="pc" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="BOX" isKey="true"/>
+            <attribute attributeId="Description" value="BOX.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="BOX.KEYWORDS" isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/panelcustomizable_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:panelCustomizable id="#" xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"/>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Movable Box -->
+        <component id="sdf" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="MOVABLE_BOX" isKey="true"/>
+            <attribute attributeId="Description" value="MOVABLE_BOX.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="MOVABLE_BOX.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/moveframe_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.MOVABLE_BOX}">
+                    <cust:panelCustomizable id="#" layout="scroll"/>
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Image -->
+        <component id="image" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="IMAGE" isKey="true"/>
+            <attribute attributeId="Description" value="IMAGE.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="IMAGE.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/image_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.IMAGE}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:goImageLink xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="#"
+                                    icon="/adf/pe/images/default_image.png" shortDesc="#{null}" />
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Text -->
+        <component id="text" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="TEXT" isKey="true"/>
+            <attribute attributeId="Description" value="TEXT.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="TEXT.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/text_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.TEXT}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none" selectChild="no"
+                                        showResizer="never" stretchContent="false">
+                    <af:richTextEditor id="#" simple="true" contentStyle="width:100%"
+                                       clientComponent="true"  toolboxLayout="font formatCommon color list"
+                                       xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Link -->
+        <component id="link" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="LINK" isKey="true"/>
+            <attribute attributeId="Description" value="LINK.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="LINK.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/weblinks_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" background="light"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="false" showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:goLink id="#" text="#{componentExtensionBundle.LINK_TEXT}"
+                               xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Web Page -->
+        <component id="page" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="PAGE" isKey="true"/>
+            <attribute attributeId="Description" value="PAGE.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="PAGE.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/htmlfile_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.PAGE}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="#{changeModeBean.inEditMode ? 'always' : 'never'}">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:inlineFrame id="#" source="/oracle/adfinternal/pageeditor/common/defaultpage.jspx"
+                                    xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- HTML Markup -->
+        <component id="outputText" visible="#{true}"
+                   factoryClass="oracle.adf.rc.component.XmlComponentFactory">
+          <attributes>
+            <attribute attributeId="Title" value="OUTPUT_TEXT" isKey="true"/>
+            <attribute attributeId="Description" value="OUTPUT_TEXT.DESCRIPTION"
+                       isKey="true"/>
+            <attribute attributeId="Subject" value="OUTPUT_TEXT.KEYWORDS"
+                       isKey="true"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/elementtext_qualifier.png"/>
+          </attributes>
+          <parameters>
+            <parameter id="xml">
+                <![CDATA[<cust:showDetailFrame xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+                                        id="#" text="#{componentExtensionBundle.OUTPUT_TEXT}"
+                                        background="#{changeModeBean.inEditMode ? 'medium' : 'light'}"
+                                        contentStyle="background-color:transparent;"
+                                        displayHeader="#{changeModeBean.inEditMode}"
+                                        showMinimizeAction="none"
+                                        showResizer="never" stretchContent="false">
+                    <f:attribute xmlns:f="http://java.sun.com/jsf/core"
+                                 name="sdf_selection_rule" value="sdf_for_edit_mode_only"/>
+                    <af:outputText id="#" escape="false" value="#{componentExtensionBundle.OUTPUT_TEXT_TEXT}"
+                                   xmlns:af="http://xmlns.oracle.com/adf/faces/rich"/>
+                  </cust:showDetailFrame>
+                ]]>
+              </parameter>
+          </parameters>
+        </component>
+        <!-- Links -->
+        <url visible="#{true}"
+             factoryClass="oracle.webcenter.portalframework.sitestructure.rc.TaskFlowResourceFactory"
+             id="quickLinks"
+             url="taskflow://oracle/webcenter/navigationtaskflows/view/pagetree-definition.xml#pagetree-definition">
+          <attributes>
+            <attribute value="QUICK_LINKS.TITLE" attributeId="Title"
+                       isKey="true"/>
+            <attribute value="QUICK_LINKS.DESCRIPTION"
+                       attributeId="Description" isKey="true"/>
+            <attribute value="QUICK_LINKS.KEYWORDS" attributeId="Subject"
+                       isKey="true"/>
+            <attribute value="false" attributeId="attr.displayHeader"
+                       isKey="false"/>
+            <attribute attributeId="IconURI"
+                       value="/adf/webcenter/weblinks_qualifier.png"/>
+            <attribute attributeId="parameter.showRoot" value="none" isKey="false"/>
+            <attribute attributeId="parameter.startNode" value="/" isKey="false"/>
+            <attribute attributeId="parameter.navigationFile"
+                       value="${'/oracle/webcenter/quicklinks/scopedMD/##ORACLE.CURRENT_SCOPE_GUID##/##ORACLE.REGION_ID##'}"
+                       isKey="false"/>
+            <attribute attributeId="parameter.depth" value="0" isKey="false"/>
+            <attribute attributeId="parameter.navigationEditMode" value="multiple" isKey="false"/>
+          </attributes>
+          <contents/>
+        </url>
+      </contents>
+    </folder>
+  </contents>
+  <schema resourceBundle="oracle.adf.rc.attribute.nls.AttributeBundle"
+          xmlns="http://xmlns.oracle.com/adf/rcs/catalog">
+    <descriptor multivalue="false" searchable="true"
+                shortLabelKey="TITLE.SHORT_PROMPT_KEY" endUserVisible="true"
+                labelKey="TITLE.PROMPT_KEY" attributeId="Title"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor multivalue="false" searchable="true"
+                shortLabelKey="DESCRIPTION.SHORT_PROMPT_KEY"
+                endUserVisible="true" labelKey="DESCRIPTION.PROMPT_KEY"
+                attributeId="Description"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor multivalue="false" searchable="true"
+                shortLabelKey="SUBJECT.SHORT_PROMPT_KEY" endUserVisible="true"
+                labelKey="SUBJECT.PROMPT_KEY" attributeId="Subject"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor multivalue="false" searchable="false"
+                shortLabelKey="TOOL_TIP.SHORT_PROMPT_KEY" endUserVisible="true"
+                labelKey="TOOL_TIP.PROMPT_KEY" attributeId="ToolTip"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+    <descriptor multivalue="false" searchable="false"
+                shortLabelKey="ICON_URI.SHORT_PROMPT_KEY" endUserVisible="false"
+                labelKey="ICON_URI.PROMPT_KEY" attributeId="IconURI"
+                xmlns="http://xmlns.oracle.com/adf/rcs/catalog"/>
+  </schema>
+</catalogDefinition>
+

@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1" xmlns="urn:oasis:names:tc:xliff:document:1.1">
+  <file source-language="en"
+        original="oracle.webcenter.portalapp.catalogs.DefaultCatalogBundle.xlf" datatype="xml">
+    <body>
+      <!-- Displayable text for the catalog schema -->
+      <trans-unit id="TITLE.PROMPT_KEY">
+        <source>Name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TITLE.SHORT_PROMPT_KEY">
+        <source>Name</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DESCRIPTION.PROMPT_KEY">
+        <source>Description</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DESCRIPTION.SHORT_PROMPT_KEY">
+        <source>Description</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBJECT.PROMPT_KEY">
+        <source>Subject and Keywords</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBJECT.SHORT_PROMPT_KEY">
+        <source>Keywords</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TOOL_TIP.LABEL">
+        <source>Tool Tip</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TOOL_TIP.SHORT_LABEL">
+        <source>Tool Tip</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ICON_URI.LABEL">
+        <source>Icon URI</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ICON_URI.SHORT_LABEL">
+        <source>Icon URI</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEBCENTER_SERVICE_ID.LABEL">
+        <source>WebCenter Web 2.0 Service ID</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEBCENTER_SERVICE_ID.SHORT_LABEL">
+        <source>Service ID</source>
+        <target/>
+      </trans-unit>
+      <!-- Catalog Title -->
+      <trans-unit id="DEFAULT_CATALOG.TITLE">
+        <source>Default Portal Catalog</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DEFAULT_CATALOG.DESCRIPTION">
+        <source>Default resource catalog definition for WebCenter Portal applications</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DEFAULT_CATALOG.KEYWORDS">
+        <source>Portal, Catalog</source>
+        <target/>
+      </trans-unit>
+      <!-- Displayable text for the catalog entries -->
+      <trans-unit id="ANNOUNCEMENTS_FOLDER.TITLE">
+        <source>Announcements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS_FOLDER.DESCRIPTION">
+        <source>Announcements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS_FOLDER.KEYWORDS">
+        <source>announcement, announce, publish, message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS.TITLE">
+        <source>Announcements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS.DESCRIPTION">
+        <source>Announcements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS.KEYWORDS">
+        <source>announcement, announce, publish, message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS_MANAGER.TITLE">
+        <source>Announcement Manager</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS_MANAGER.DESCRIPTION">
+        <source>Manage Announcements</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANNOUNCEMENTS_MANAGER.KEYWORDS">
+        <source>announcement, announce, publish, message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_FOLDER.TITLE">
+        <source>Polls and Surveys</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_FOLDER.DESCRIPTION">
+        <source>Polls and surveys</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_FOLDER.KEYWORDS">
+        <source>Poll, Survey</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS.TITLE">
+        <source>Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS.DESCRIPTION">
+        <source>Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS.KEYWORDS">
+        <source>Poll, Survey</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_MANAGER.TITLE">
+        <source>Polls Manager</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_MANAGER.DESCRIPTION">
+        <source>Create, publish, and manage Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SURVEYS_MANAGER.KEYWORDS">
+        <source>Poll, Survey</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAKE_SURVEYS.TITLE">
+        <source>Take Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAKE_SURVEYS.DESCRIPTION">
+        <source>Select a Poll to publish on a page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAKE_SURVEYS.KEYWORDS">
+        <source>Poll, Survey</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="AVAILABLE_SURVEYS.TITLE">
+        <source>Available Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="AVAILABLE_SURVEYS.DESCRIPTION">
+        <source>Display a list of published Polls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="AVAILABLE_SURVEYS.KEYWORDS">
+        <source>Poll, Survey</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_POLL.TITLE">
+        <source>Quick Poll</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_POLL.DESCRIPTION">
+        <source>Create and publish a new Poll</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_POLL.KEYWORDS">
+        <source>Poll, Survey, Quick</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="VIEW_POLL_RESULTS.TITLE">
+        <source>View Poll Results</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="VIEW_POLL_RESULTS.DESCRIPTION">
+        <source>Display the results of a published Poll</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="VIEW_POLL_RESULTS.KEYWORDS">
+        <source>Poll, Survey, View Results</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CALENDAR_MAIN_VIEW.TITLE">
+        <source>Events</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CALENDAR_MAIN_VIEW.DESCRIPTION">
+        <source>Events</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CALENDAR_MAIN_VIEW.KEYWORDS">
+        <source>Event, Calendar, Time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_DOCUMENT_FOLDER.TITLE">
+        <source>Content Management</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_DOCUMENT_FOLDER.DESCRIPTION">
+        <source>Content management and display views to add to your page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_DOCUMENT_FOLDER.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.TITLE">
+        <source>All Content</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.DESCRIPTION">
+        <source>All content you have access to</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_ALL_DOCUMENTS.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_GROUP_DOCUMENTS.TITLE">
+        <source>Portal Documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_GROUP_DOCUMENTS.DESCRIPTION">
+        <source>Documents associated with the portal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_GROUP_DOCUMENTS.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_MAIN_VIEW.TITLE">
+        <source>Document Manager</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_MAIN_VIEW.DESCRIPTION">
+        <source>Manage content of a folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_MAIN_VIEW.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_FOLDER_VIEWER.TITLE">
+        <source>Folder Viewer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_FOLDER_VIEWER.DESCRIPTION">
+        <source>View and manage content of a folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_FOLDER_VIEWER.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_NAVIGATOR.TITLE">
+        <source>Document Navigator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_NAVIGATOR.DESCRIPTION">
+        <source>View content hierarchy</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_NAVIGATOR.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_LIST_VIEW.TITLE">
+        <source>Document List Viewer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_LIST_VIEW.DESCRIPTION">
+        <source>List documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_LIST_VIEW.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_EXPLORER.TITLE">
+        <source>Document Explorer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_EXPLORER.DESCRIPTION">
+        <source>Explore files and folder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_EXPLORER.KEYWORDS">
+        <source>Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_RECENT_VIEW.TITLE">
+        <source>Recent Documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_RECENT_VIEW.DESCRIPTION">
+        <source>List recently created or modified documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_RECENT_VIEW.KEYWORDS">
+        <source>Recent, Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_BLOG_VIEW.TITLE">
+        <source>Blogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_BLOG_VIEW.DESCRIPTION">
+        <source>Create a blog</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_BLOG_VIEW.KEYWORDS">
+        <source>Blogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_CONTENT_PRESENTER.TITLE">
+        <source>Content Presenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_CONTENT_PRESENTER.DESCRIPTION">
+        <source>Select document(s) and display in predefined template</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_CONTENT_PRESENTER.KEYWORDS">
+        <source>Content, Presenter, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_PERSONAL_DOCUMENTS.TITLE">
+        <source>Personal Documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_PERSONAL_DOCUMENTS.DESCRIPTION">
+        <source>Documents associated with your Home Space</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DOCLIB_PERSONAL_DOCUMENTS.KEYWORDS">
+        <source>personal, Content, Documents, Files, Folders</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FACES_COMPONENTS.TITLE">
+        <source>Layout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FACES_COMPONENTS.DESCRIPTION">
+        <source>Components to add to your page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FACES_COMPONENTS.KEYWORDS">
+        <source>ADF,faces,component,tag, layout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX">
+        <source>Box</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX.DESCRIPTION">
+        <source>A box in which content can flow vertically or horizontally</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BOX.KEYWORDS">
+        <source>panelCustomizable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX">
+        <source>Movable Box</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX.DESCRIPTION">
+        <source>A box in which content can flow vertically or horizontally. It
+                also provides customization options such as move, expand or
+                collapse, and resize.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MOVABLE_BOX.KEYWORDS">
+        <source>showDetailFrame</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE">
+        <source>Image</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE.DESCRIPTION">
+        <source>An image with a hyperlink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="IMAGE.KEYWORDS">
+        <source>link imageLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK">
+        <source>Page Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK.DESCRIPTION">
+        <source>Link to a page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGELINK.KEYWORDS">
+        <source>goLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT">
+        <source>Text</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT.DESCRIPTION">
+        <source>Formatted text</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEXT.KEYWORDS">
+        <source>rich text richTextEditor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK">
+        <source>Hyperlink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.DESCRIPTION">
+        <source>Link to a page or a Web site</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINK.KEYWORDS">
+        <source>goLink</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE">
+        <source>Web Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE.DESCRIPTION">
+        <source>Includes another Web page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PAGE.KEYWORDS">
+        <source>inlineFrame iFrame</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT">
+        <source>HTML Markup</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT.DESCRIPTION">
+        <source>Raw HTML and JavaScript</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OUTPUT_TEXT.KEYWORDS">
+        <source>script html embed object</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_FOLDER.TITLE">
+        <source>Discussions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_FOLDER.DESCRIPTION">
+        <source>Discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_FOLDER.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MANAGER.TITLE">
+        <source>Discussion Forum Manager</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MANAGER.DESCRIPTION">
+        <source>Manage discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MANAGER.KEYWORDS">
+        <source>announcement, announce, publish, message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MINI_VIEW.TITLE">
+        <source>Forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MINI_VIEW.DESCRIPTION">
+        <source>Discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_MINI_VIEW.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_TOPICS_VIEW.TITLE">
+        <source>Watched Topics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_TOPICS_VIEW.DESCRIPTION">
+        <source>Topics you are watching in discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_TOPICS_VIEW.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_RECENT_TOPICS_VIEW.TITLE">
+        <source>Recent Topics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_RECENT_TOPICS_VIEW.DESCRIPTION">
+        <source>Recent topics of discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_RECENT_TOPICS_VIEW.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_POPULAR_TOPICS_VIEW.TITLE">
+        <source>Popular Topics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_POPULAR_TOPICS_VIEW.DESCRIPTION">
+        <source>Popular topics of discussion forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_POPULAR_TOPICS_VIEW.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_FORUM_VIEW.TITLE">
+        <source>Watched Forums</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_FORUM_VIEW.DESCRIPTION">
+        <source>Discussion forums you are watching</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FORUM_WATCHED_FORUM_VIEW.KEYWORDS">
+        <source>Discussion, Forum, Message, Topic, Thread, Post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_FOLDER.TITLE">
+        <source>Lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_FOLDER.DESCRIPTION">
+        <source>Lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_FOLDER.KEYWORDS">
+        <source>List, Enumerate, Roll, Table</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_MAIN_VIEW.TITLE">
+        <source>List Manager</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_MAIN_VIEW.DESCRIPTION">
+        <source>Manage lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_MAIN_VIEW.KEYWORDS">
+        <source>List, Enumerate, Roll, Table</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_CUSTOM_FOLDER.TITLE">
+        <source>Lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_CUSTOM_FOLDER.DESCRIPTION">
+        <source>All lists</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LISTS_CUSTOM_FOLDER.KEYWORDS">
+        <source>List, Enumerate, Roll, Table</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MASHUPS_FOLDER.TITLE">
+        <source>Mash-Ups</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MASHUPS_FOLDER.DESCRIPTION">
+        <source>Mash-up information into this page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MASHUPS_FOLDER.KEYWORDS">
+        <source>mash-up, portlet, clipping, rich text</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OMNI_PORTLET.TITLE">
+        <source>OmniPortlet</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OMNI_PORTLET.DESCRIPTION">
+        <source>Compose visualizations from many sources of data</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="OMNI_PORTLET.KEYWORDS">
+        <source>mashup, mash-up, composer, omni-portlet, omniportlet, data
+                source, publish, layout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS_FOLDER.TITLE">
+        <source>Portlets</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS_FOLDER.DESCRIPTION">
+        <source>Portlets to add to your page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PORTLETS_FOLDER.KEYWORDS">
+        <source>Portlet, Producer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECENT_ACTIVITY.TITLE">
+        <source>Recent Activity</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECENT_ACTIVITY.DESCRIPTION">
+        <source>Recent activity</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECENT_ACTIVITY.KEYWORDS">
+        <source>Recent, Activity, Change, Latest, New</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS_VIEWER.TITLE">
+        <source>RSS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS_VIEWER.DESCRIPTION">
+        <source>External RSS feed</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS_VIEWER.KEYWORDS">
+        <source>rss, feed, content, news</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH_FOLDER.TITLE">
+        <source>Search</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH_FOLDER.DESCRIPTION">
+        <source>Search task flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH_FOLDER.KEYWORDS">
+        <source>Search, Find</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.TITLE">
+        <source>Saved Searches</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.DESCRIPTION">
+        <source>Saved Searches</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES.KEYWORDS">
+        <source>Search, Find</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES_LIST.TITLE">
+        <source>All Saved Searches</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES_LIST.DESCRIPTION">
+        <source>All saved searches</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SAVED_SEARCHES_LIST.KEYWORDS">
+        <source>Search, Find</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH.TITLE">
+        <source>Search</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH.DESCRIPTION">
+        <source>Search portal content</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SEARCH.KEYWORDS">
+        <source>Search, Find</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PERSONAL_FOLDER.TITLE">
+        <source>Personal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PERSONAL_FOLDER.DESCRIPTION">
+        <source>Personal task flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PERSONAL_FOLDER.KEYWORDS">
+        <source>sidebar, miniview, buddies, mail, notes, worklist</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUDDIES_VIEW.TITLE">
+        <source>Buddies</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUDDIES_VIEW.DESCRIPTION">
+        <source>Buddy list</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUDDIES_VIEW.KEYWORDS">
+        <source>Contacts, Buddies, People, Presence, Chat, Instant Messaging,
+                Interact, Collaborate</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MAIL_INBOX.TITLE">
+        <source>Mail</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MAIL_INBOX.DESCRIPTION">
+        <source>Recent email in your inbox</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="MAIL_INBOX.KEYWORDS">
+        <source>Email, Inbox, Mail</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NOTES.TITLE">
+        <source>Notes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NOTES.DESCRIPTION">
+        <source>Personal notes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="NOTES.KEYWORDS">
+        <source>Personal, Notes, Activities</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRESENCE.TITLE">
+        <source>Presence Control</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRESENCE.DESCRIPTION">
+        <source>Publish presence</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRESENCE.KEYWORDS">
+        <source>Contacts, Buddies, People, Presence, Chat, Instant Messaging,
+                Interact, Collaborate</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WORKLIST.TITLE">
+        <source>Worklist</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WORKLIST.DESCRIPTION">
+        <source>Personal worklist</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WORKLIST.KEYWORDS">
+        <source>Tasks, Worklist, Process, Interaction, My, Personal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EVENTS.TITLE">
+        <source>Events</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EVENTS.DESCRIPTION">
+        <source>Personal events</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EVENTS.KEYWORDS">
+        <source>Event, Calendar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMIN_FOLDER.TITLE">
+        <source>Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMIN_FOLDER.DESCRIPTION">
+        <source>Portlet Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMIN_FOLDER.KEYWORDS">
+        <source>Admin, Producer, Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRODUCER.TITLE">
+        <source>Producer Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRODUCER.DESCRIPTION">
+        <source>Producer Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRODUCER.KEYWORDS">
+        <source>Admin, Producer, Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTAPP.TITLE">
+        <source>External Application</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTAPP.DESCRIPTION">
+        <source>External Application</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTAPP.KEYWORDS">
+        <source>Admin, External Application, Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS.TITLE">
+        <source>Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS.DESCRIPTION">
+        <source>Personal tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS.KEYWORDS">
+        <source>Tags, Tagging, Tagged, Personal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD.TITLE">
+        <source>Tag Cloud</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD.DESCRIPTION">
+        <source>Browse and navigate all tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD.KEYWORDS">
+        <source>Tags, Tagging, Tagged, Cloud</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD_RELATED_ITEMS.TITLE">
+        <source>Tag Cloud Related Resources</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD_RELATED_ITEMS.DESCRIPTION">
+        <source>Related resources for a selected tag. Use the Tag Cloud taskflow for tag selection.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_CLOUD_RELATED_ITEMS.KEYWORDS">
+        <source>Tags, Tagging, Tagged, Cloud, Related</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_RELATED_LINKS.TITLE">
+        <source>Similarly Tagged Items</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_RELATED_LINKS.DESCRIPTION">
+        <source>Items that have at least one tag in common with the current page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_RELATED_LINKS.KEYWORDS">
+        <source>Tags, Tagging, Tagged, Personal, Related, Implicit Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PEOPLECONN_FOLDER.TITLE">
+        <source>People Connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PEOPLECONN_FOLDER.DESCRIPTION">
+        <source>People Connections management and display views to add to your
+                page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PEOPLECONN_FOLDER.KEYWORDS">
+        <source>people, connections, social, networking</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_GALLERY.TITLE">
+        <source>Profile Gallery</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_GALLERY.DESCRIPTION">
+        <source>View all quick views in one view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_GALLERY.KEYWORDS">
+        <source>profile, gallery, personal, web, social</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SNAPSHOT.TITLE">
+        <source>Profile - Snapshot</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SNAPSHOT.DESCRIPTION">
+        <source>View a photo and main profile details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SNAPSHOT.KEYWORDS">
+        <source>profile, snapshot, photo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTENDED_PROFILE.TITLE">
+        <source>Profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTENDED_PROFILE.DESCRIPTION">
+        <source>Manage your own or view another's profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="EXTENDED_PROFILE.KEYWORDS">
+        <source>profile, extended</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LIMITED_PROFILE.TITLE">
+        <source>Profile - Limited</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LIMITED_PROFILE.DESCRIPTION">
+        <source>View a selection of profile details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LIMITED_PROFILE.KEYWORDS">
+        <source>profile, limited</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SUMMARY.TITLE">
+        <source>Profile - Quick View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SUMMARY.DESCRIPTION">
+        <source>View a summary of profile details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_SUMMARY.KEYWORDS">
+        <source>profile, summary, mini, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_ACTIONS.TITLE">
+        <source>Profile - Actions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_ACTIONS.DESCRIPTION">
+        <source>Render the actions for a profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PROFILE_ACTIONS.KEYWORDS">
+        <source>profile, actions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MAINVIEW.TITLE">
+        <source>Connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MAINVIEW.DESCRIPTION">
+        <source>Manage your connections and invitations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MAINVIEW.KEYWORDS">
+        <source>connections, main, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MINIVIEW.TITLE">
+        <source>Connections - Quick View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MINIVIEW.DESCRIPTION">
+        <source>View a summary of connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_MINIVIEW.KEYWORDS">
+        <source>connections, summary, mini, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_DETAIL_VIEW.TITLE">
+        <source>Connections - Detailed View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_DETAIL_VIEW.DESCRIPTION">
+        <source>View your connections and invitations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONNECTIONS_DETAIL_VIEW.KEYWORDS">
+        <source>connections, detail, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TABLE_OF_CONNECTIONS.TITLE">
+        <source>Connections - Card</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TABLE_OF_CONNECTIONS.DESCRIPTION">
+        <source>View connections details</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TABLE_OF_CONNECTIONS.KEYWORDS">
+        <source>connections, table, card, list</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PUBLISHER.TITLE">
+        <source>Publisher</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PUBLISHER.DESCRIPTION">
+        <source>Post a message, upload a document and share a link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PUBLISHER.KEYWORDS">
+        <source>message, board, wall, publisher, share, publish, document,
+                upload, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ORG_VIEWER.TITLE">
+        <source>Organization View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ORG_VIEWER.DESCRIPTION">
+        <source>View and browse the organization hierarchy</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ORG_VIEWER.KEYWORDS">
+        <source>profile, orgview</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MINIVIEW.TITLE">
+        <source>Message Board - Quick View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MINIVIEW.DESCRIPTION">
+        <source>View a summary of messages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MINIVIEW.KEYWORDS">
+        <source>message, board, wall, scrapbook, mini, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MAINVIEW.TITLE">
+        <source>Message Board</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MAINVIEW.DESCRIPTION">
+        <source>Manage or view messages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WALL_MAINVIEW.KEYWORDS">
+        <source>message, board, wall, scrapbook, main, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MINIVIEW.TITLE">
+        <source>Feedback - Quick View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MINIVIEW.DESCRIPTION">
+        <source>View a summary of feedback comments</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MINIVIEW.KEYWORDS">
+        <source>feedback, kudos, recommendations, testimonials, comments, mini,
+                view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MAINVIEW.TITLE">
+        <source>Feedback</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MAINVIEW.DESCRIPTION">
+        <source>Manage or view feedback comments</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="KUDOS_MAINVIEW.KEYWORDS">
+        <source>feedback, kudos, recommendations, testimonials, comments, main,
+                view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MINIVIEW.TITLE">
+        <source>Activity Stream - Quick View</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MINIVIEW.DESCRIPTION">
+        <source>View your portal's recent activities</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MINIVIEW.KEYWORDS">
+        <source>activity, stream, log, recent, mini, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MAINVIEW.TITLE">
+        <source>Activity Stream</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MAINVIEW.DESCRIPTION">
+        <source>View activity on your portal</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ACTIVITY_STREAM_MAINVIEW.KEYWORDS">
+        <source>activity, stream, log, main, view</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDATIONS_FOLDER.TITLE">
+        <source>Recommendations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDATIONS_FOLDER.DESCRIPTION">
+        <source>Recommendation task flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDATIONS_FOLDER.KEYWORDS">
+        <source>recommendations</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDED_CONNECTIONS.TITLE">
+        <source>Recommended Connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDED_CONNECTIONS.DESCRIPTION">
+        <source>Displays recommended users</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RECOMMENDED_CONNECTIONS.KEYWORDS">
+        <source>recommendations, connections</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS.TITLE">
+        <source>Similar Items</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS.DESCRIPTION">
+        <source>Displays similar items</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS.KEYWORDS">
+        <source>recommendations, similar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_DOCUMENTS.TITLE">
+        <source>Similar Items for Documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_DOCUMENTS.DESCRIPTION">
+        <source>Displays items similar to given documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_DOCUMENTS.KEYWORDS">
+        <source>recommendations, documents</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_BLOGS.TITLE">
+        <source>Similar Items for Blogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_BLOGS.DESCRIPTION">
+        <source>Displays items similar to given blogs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_BLOGS.KEYWORDS">
+        <source>recommendations, blog</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_WIKIS.TITLE">
+        <source>Similar Items for Wiki Pages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_WIKIS.DESCRIPTION">
+        <source>Displays items similar to given wiki pages</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SIMILAR_ITEMS_WIKIS.KEYWORDS">
+        <source>recommendations, wiki</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CHOOSE_LANGUAGE.TITLE">
+        <source>Change Language</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CHOOSE_LANGUAGE.DESCRIPTION">
+        <source>Choose the language in which to view the content</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CHOOSE_LANGUAGE.KEYWORDS">
+        <source>Choose the language in which to view the content</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_FOLDER.TITLE">
+        <source>Analysis</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_FOLDER.DESCRIPTION">
+        <source>Performance and usage metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_FOLDER.KEYWORDS">
+        <source>Analytics, console, statistics, portal, usage, traffic, metrics,
+                reports</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_CONSOLE.TITLE">
+        <source>Analytics Console</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_CONSOLE.DESCRIPTION">
+        <source>Main console for viewing and managing Analytics reports</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_CONSOLE.KEYWORDS">
+        <source>Analytics, console, statistics, portal, usage, traffic, metrics,
+                reports</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SUMMARY_REP.TITLE">
+        <source>Portal Traffic</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SUMMARY_REP.DESCRIPTION">
+        <source>Summary portal traffic report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SUMMARY_REP.KEYWORDS">
+        <source>Analytics, summary, portal, traffic, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PAGE_TRAFFIC_REP.TITLE">
+        <source>Page Traffic</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PAGE_TRAFFIC_REP.DESCRIPTION">
+        <source>Page traffic report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PAGE_TRAFFIC_REP.KEYWORDS">
+        <source>Analytics, page, traffic, hits, visits, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_LOGINS_REP.TITLE">
+        <source>Login Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_LOGINS_REP.DESCRIPTION">
+        <source>Portal login metrics report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_LOGINS_REP.KEYWORDS">
+        <source>Analytics, login, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_TRAFFIC_REP.TITLE">
+        <source>Portal Traffic</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_TRAFFIC_REP.DESCRIPTION">
+        <source>Portal statistics report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_TRAFFIC_REP.KEYWORDS">
+        <source>Analytics, portal, traffic, usage, hits, visits, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_RESPTIME_REP.TITLE">
+        <source>Portal Response Time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_RESPTIME_REP.DESCRIPTION">
+        <source>Portal response time report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_GS_RESPTIME_REP.KEYWORDS">
+        <source>Analytics, portal, response time, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_TRAFFIC_REP.TITLE">
+        <source>Portlet Traffic</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_TRAFFIC_REP.DESCRIPTION">
+        <source>Portlet usage report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_TRAFFIC_REP.KEYWORDS">
+        <source>Analytics, portlet, traffic, usage, hits, visits, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_RESPTIME_REP.TITLE">
+        <source>Portlet Response Time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_RESPTIME_REP.DESCRIPTION">
+        <source>Portlet response time report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_PORTLET_RESPTIME_REP.KEYWORDS">
+        <source>Analytics, portlet, response time, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SEARCH_REP.TITLE">
+        <source>Search Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SEARCH_REP.DESCRIPTION">
+        <source>WebCenter search service metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_SEARCH_REP.KEYWORDS">
+        <source>Analytics, search phrase, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DOCUMENT_REP.TITLE">
+        <source>Document Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DOCUMENT_REP.DESCRIPTION">
+        <source>WebCenter document service metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DOCUMENT_REP.KEYWORDS">
+        <source>Analytics, document, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_WIKI_REP.TITLE">
+        <source>Wiki Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_WIKI_REP.DESCRIPTION">
+        <source>Wiki service metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_WIKI_REP.KEYWORDS">
+        <source>Analytics, wiki, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_BLOG_REP.TITLE">
+        <source>Blog Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_BLOG_REP.DESCRIPTION">
+        <source>Blog service metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_BLOG_REP.KEYWORDS">
+        <source>Analytics, blog, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DISCUSS_FORUM_REP.TITLE">
+        <source>Discussion Forum Metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DISCUSS_FORUM_REP.DESCRIPTION">
+        <source>Discussion forum service metrics</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ANALYTICS_DISCUSS_FORUM_REP.KEYWORDS">
+        <source>Analytics, discussion forum, report</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.TITLE">
+        <source>Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.DESCRIPTION">
+        <source>Login link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGIN.KEYWORDS">
+        <source>Login</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.TITLE">
+        <source>Logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.DESCRIPTION">
+        <source>Logout link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LOGOUT.KEYWORDS">
+        <source>Logout</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.TITLE">
+        <source>RSS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.DESCRIPTION">
+        <source>RSS link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RSS.KEYWORDS">
+        <source>RSS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.TITLE">
+        <source>About WebCenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.DESCRIPTION">
+        <source>About WebCenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ABOUT_WC.KEYWORDS">
+        <source>about, webcenter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.TITLE">
+        <source>Application Logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.DESCRIPTION">
+        <source>Application Logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_LOGO.KEYWORDS">
+        <source>application, logo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.TITLE">
+        <source>Application Title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.DESCRIPTION">
+        <source>Application Title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="APPLICATION_TITLE.KEYWORDS">
+        <source>application, title</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.TITLE">
+        <source>Current User Profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.DESCRIPTION">
+        <source>Current User Profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CURR_USER_PROFILE.KEYWORDS">
+        <source>user, profile</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.TITLE">
+        <source>Global Help</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.DESCRIPTION">
+        <source>Link to Global Help Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="GLOBAL_HELP.KEYWORDS">
+        <source>global, help</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.TITLE">
+        <source>Self Registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.DESCRIPTION">
+        <source>Link to Self Registration Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SELF_REGISTRATION.KEYWORDS">
+        <source>self, registration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.TITLE">
+        <source>Status Indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.DESCRIPTION">
+        <source>Status Indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="STATUS_INDICATOR.KEYWORDS">
+        <source>status, indicator</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.TITLE">
+        <source>Contact Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.DESCRIPTION">
+        <source>Contact Administration link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CONTACT_ADMIN.KEYWORDS">
+        <source>Contact Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.TITLE">
+        <source>Privacy URL</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.DESCRIPTION">
+        <source>Privacy URL link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PRIVACY_URL.KEYWORDS">
+        <source>Privacy URL</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.TITLE">
+        <source>Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.DESCRIPTION">
+        <source>Administration link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ADMINISTRATION.KEYWORDS">
+        <source>Administration</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.TITLE">
+        <source>Create Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.DESCRIPTION">
+        <source>Create Page link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="CREATE_PAGE.KEYWORDS">
+        <source>Create Page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.TITLE">
+        <source>Favorites Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.DESCRIPTION">
+        <source>Favorites Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="FAVORITES_MENU.KEYWORDS">
+        <source>Favorites Menu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.TITLE">
+        <source>User Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.DESCRIPTION">
+        <source>Preferences link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="PREFERENCES.KEYWORDS">
+        <source>Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.TITLE">
+        <source>Copyright Message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.DESCRIPTION">
+        <source>Copyright Message</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="COPYRIGHT_MESSAGE.KEYWORDS">
+        <source>Copyright</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.TITLE">
+        <source>Tags</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.DESCRIPTION">
+        <source>Tags for current page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAGS_FOR_CURRENT_PAGE.KEYWORDS">
+        <source>Tag</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.TITLE">
+        <source>Page Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.DESCRIPTION">
+        <source>Links to current page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="LINKS_FOR_CURRENT_PAGE.KEYWORDS">
+        <source>Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_LINKS.TITLE">
+        <source>Links</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_LINKS.DESCRIPTION">
+        <source>Add links to the current page</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="QUICK_LINKS.KEYWORDS">
+        <source>Link</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_FOLDER.TITLE">
+        <source>Subscriptions</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_FOLDER.DESCRIPTION">
+        <source>Subscription task flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_FOLDER.KEYWORDS">
+        <source>Subscribe, subscription, notification</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_VIEWER.TITLE">
+        <source>Subscription Viewer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_VIEWER.DESCRIPTION">
+        <source>Subscription Viewer</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_VIEWER.KEYWORDS">
+        <source>Subscribe, subscription, notification</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_PREFERENCES.TITLE">
+        <source>Subscription Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_PREFERENCES.DESCRIPTION">
+        <source>Subscription Preferences</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SUBSCRIPTION_PREFERENCES.KEYWORDS">
+        <source>Subscribe, subscription, preference</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.TITLE">
+        <source>Business Mashups</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.DESCRIPTION">
+        <source>Business Mashups created through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="BUSINESS_MASHUPS.KEYWORDS">
+        <source>Business Mashups</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASKFLOW.TITLE">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASKFLOW.DESCRIPTION">
+        <source>Task Flows created through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TASKFLOW.KEYWORDS">
+        <source>Task Flows</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.TITLE">
+        <source>Runtime DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.DESCRIPTION">
+        <source>Datacontrols created through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="RT_DATACONTROL.KEYWORDS">
+        <source>Runtime DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.TITLE">
+        <source>Design Time DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.DESCRIPTION">
+        <source>Datacontrols created at design time</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DT_DATACONTROL.KEYWORDS">
+        <source>Design Time DataControls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DATACONTROL_FOLDER.TITLE">
+        <source>Data Controls</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DATACONTROL_FOLDER.DESCRIPTION">
+        <source>Data controls created at design time and through SRM</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="DATACONTROL_FOLDER.KEYWORDS">
+        <source>DataControls</source>
+        <target/>
+      </trans-unit>
+      <!-- TODO: Review descriptions and keywords for top-level folders -->
+      <trans-unit id="ALERTS_UPDATES_FOLDER.TITLE">
+        <source>Alerts and Updates</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ALERTS_UPDATES_FOLDER.DESCRIPTION">
+        <source>Alerts and updates</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ALERTS_UPDATES_FOLDER.KEYWORDS">
+        <source></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SOCIAL_FOLDER.TITLE">
+        <source>Social and Communication</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SOCIAL_FOLDER.DESCRIPTION">
+        <source>Social and communication</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="SOCIAL_FOLDER.KEYWORDS">
+        <source></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_SEARCH_FOLDER.TITLE">
+        <source>Tagging and Searching</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_SEARCH_FOLDER.DESCRIPTION">
+        <source>Tagging and searching</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TAG_SEARCH_FOLDER.KEYWORDS">
+        <source></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEMPLATE_DEV_FOLDER.TITLE">
+        <source>Template Development</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEMPLATE_DEV_FOLDER.DESCRIPTION">
+        <source>Template development</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="TEMPLATE_DEV_FOLDER.KEYWORDS">
+        <source></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEB_DEV_FOLDER.TITLE">
+        <source>Web Development</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEB_DEV_FOLDER.DESCRIPTION">
+        <source>Web development</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="WEB_DEV_FOLDER.KEYWORDS">
+        <source></source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

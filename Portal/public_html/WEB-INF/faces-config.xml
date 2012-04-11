@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application>
+    <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+    <view-handler>oracle.webcenter.portalframework.sitestructure.handler.CustomViewHandler</view-handler>
+  </application>
+  <lifecycle>
+    <phase-listener>oracle.webcenter.skin.view.SkinPhaseListener</phase-listener>
+  </lifecycle>
+  <managed-bean>
+    <managed-bean-name>preferenceBean</managed-bean-name>
+    <managed-bean-class>oracle.webcenter.portalframework.sitestructure.preference.PortalPreferences</managed-bean-class>
+    <managed-bean-scope>application</managed-bean-scope>
+  </managed-bean>
+  <navigation-rule>
+    <from-view-id>*</from-view-id>
+    <navigation-case>
+      <from-outcome>login_success</from-outcome>
+      <to-view-id>/pages_home</to-view-id>
+      <redirect/>
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>logout_success</from-outcome>
+      <to-view-id>/pages_home</to-view-id>
+      <redirect/>
+    </navigation-case>
+  </navigation-rule>
+</faces-config>

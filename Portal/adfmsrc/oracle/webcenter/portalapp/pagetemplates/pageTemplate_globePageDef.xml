@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.55.16" id="pageTemplate_globePageDef"
+                Package="oracle.webcenter.portalapp.pagetemplates">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="navigationrenderer1"
+              taskFlowId="/oracle/webcenter/portal/framework/navigation/renderer/navigation-renderer.xml#navigation-renderer"
+              activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"
+              Refresh="ifNeeded">
+      <parameters>
+        <parameter id="SiteStructurePath"
+                   value="#{viewScope.modelPath}"/>
+        <parameter id="SiteStructureResourcePath"
+                   value="#{viewScope.selectedPrettyUrl}"/>
+      </parameters>
+    </taskFlow>       
+  </executables>
+  <bindings/>
+</pageDefinition>

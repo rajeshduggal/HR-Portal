@@ -1,0 +1,625 @@
+/* Copyright (c) 2008, 2010, Oracle and/or its affiliates. 
+All rights reserved. */
+
+/**
+ * WebCenter Portal default Skin
+ *
+ */
+
+
+/**
+ * Default Font Family, e.g.
+ * font-family: Tahoma,Verdana,Helvetica,sans-serif
+ */
+.AFDefaultFontFamily:alias
+{
+}
+
+
+/**
+ * Default Font Size, e.g.
+ * font-size: 11px;
+ */
+.AFDefaultFont:alias
+{
+}
+
+
+/**
+ * Text foreground color.
+ */
+.AFTextForeground:alias
+{
+/*
+  color: #333333;
+*/
+}
+
+
+/**
+ * Label text color.
+ */
+.AFLabelTextForeground:alias,
+.AFLabelTextForegroundDisabled:alias
+{
+}
+
+
+/**
+ * Font used in banner to display the page title.
+ */
+.AFBrandingBarTitle
+{
+}
+
+
+/**
+ * Input Components
+ *
+ */
+
+/* border and background on inputText components */
+.AFFormControlContentBorder:alias
+{
+}
+.AFFormControlContentBackground:alias
+{
+}
+
+/* foreground and background color on disabled inputText components */
+.AFFormControlContentForegroundDisabled:alias
+{
+}
+.AFFormControlContentBackgroundDisabled:alias
+{
+}
+
+
+/**
+ * Links
+ *
+ * Foreground color and border style for regular links, visited
+ * links, and active links.
+ */
+.AFLinkForeground:alias
+{
+}
+
+.AFVisitedLinkForeground:alias,
+.AFActiveLinkForeground:alias
+{
+}
+
+.AFActiveLinkBorder:alias
+{
+}
+
+
+/**
+ * Menus
+ *
+ * Menu items are items inside a menu, including sub-menus.
+ * Menu bar-items are items directly on a menuBar, similar to buttons.
+ *
+ */
+
+/* menu text color */
+.AFMenuTextForeground:alias
+{
+}
+
+/* menu item (height) */
+af|commandMenuItem::menu-item,
+af|goMenuItem::menu-item,
+af|menu::submenu
+{
+}
+
+/* menu item - highlight (color and background-color) */
+af|commandMenuItem:highlighted::menu-item-text,
+af|commandMenuItem:highlighted::menu-item-icon-style,
+af|commandMenuItem:highlighted::menu-item-accelerator,
+af|commandMenuItem:highlighted::menu-item-open-indicator,
+af|goMenuItem:highlighted::menu-item-text,
+af|goMenuItem:highlighted::menu-item-icon-style,
+af|goMenuItem:highlighted::menu-item-accelerator,
+af|goMenuItem:highlighted::menu-item-open-indicator,
+af|menu:highlighted::submenu-text,
+af|menu:highlighted::submenu-icon-style,
+af|menu:highlighted::submenu-accelerator,
+af|menu:highlighted::submenu-open-indicator
+{
+}
+
+/* menu bar-item (height)*/
+af|commandMenuItem::bar-item,
+af|goMenuItem::bar-item,
+af|menu::bar-item
+{
+}
+
+/* menu bar-item - highlight (background-image and background-color) */
+af|commandMenuItem::bar-item:highlighted,
+af|goMenuItem::bar-item:highlighted,
+af|menu::bar-item:highlighted
+{
+}
+
+/* menu bar-item - depressed (background-image and background-color) */
+af|commandMenuItem::bar-item:depressed,
+af|goMenuItem::bar-item:depressed,
+af|menu::bar-item:depressed
+{
+}
+
+
+
+/**
+ * Buttons
+ *
+ */
+
+/* Button background color, e.g. background-color: gray; background-image: ... */
+.AFButtonBackground:alias
+{
+}
+
+.AFButtonBackgroundHover:alias
+{
+}
+
+.AFButtonBackgroundActive:alias
+{
+}
+
+.AFButtonBackgroundFocus:alias
+{
+}
+
+.AFButtonBackgroundDisabled:alias
+{
+}
+
+/* Button border, also used by menus, e.g. border: 1px solid black; */
+.AFButtonBorder:alias
+{
+}
+
+.AFButtonBorderHover:alias
+{
+}
+
+.AFButtonBorderActive:alias,
+.AFButtonBorderDepressed:alias
+{
+}
+
+.AFButtonBorderDisabled:alias
+{
+}
+
+/* Button text color for regular buttons, e.g. color: black; */
+.AFButtonForeground:alias
+{
+}
+
+.AFButtonForegroundHover:alias
+{
+}
+
+.AFButtonForegroundDepressed:alias
+{
+}
+
+.AFButtonForegroundDisabled:alias
+{
+}
+
+/* Button text color for toolbar buttons with text */
+.AFButtonText:alias
+{
+}
+
+.AFButtonTextHover:alias
+{
+}
+
+.AFButtonTextDepressed:alias
+{
+}
+
+.AFButtonTextDisabled:alias
+{
+}
+
+
+/**
+ * DecorativeBoxes and PanelTabbed.  DecorativeBoxes are boxes with 
+ * decoration on all four sides and all four corners, e.g. rounded
+ * corners or shadows.  The styles used by decorativeBoxes are shared
+ * with the content area of panelTabbed (below the tabs themselves).
+ *
+ * There are three styles of tabs that should be skinned
+ *  1) normal (no theme)
+ *  2) level 1 (theme="medium")
+ *  3) level 2 (theme="light")
+ *
+ * For tabs, both the tabs themselves are skinned, as well as the 
+ * content area below the tabs.  The content area is what is shared
+ * with decorativeBox.
+ *
+ */
+
+
+/**
+ * Normal tabs, e.g. in dialogs, outside the "theme" hierarchy
+ *
+ * Specify the background images for each of the following aliases,
+ * plus a font and color for the tab text.
+ *
+ */
+
+/* normal unselected tabs */
+.AFTabAboveStartUnselectedBackground:alias:ltr
+{
+}
+.AFTabAboveStartUnselectedBackground:alias:rtl
+{
+} 
+.AFTabAboveMiddleUnselectedBackground:alias
+{
+}
+.AFTabAboveEndUnselectedBackground:alias:ltr
+{
+} 
+.AFTabAboveEndUnselectedBackground:alias:rtl
+{
+}
+af|panelTabbed::tab af|panelTabbed::tab-content,
+af|panelTabbed::tab af|panelTabbed::tab-text-link,
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-content,
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-link
+{
+}
+af|panelTabbed::tab:hover af|panelTabbed::tab-content,
+af|panelTabbed::tab:hover af|panelTabbed::tab-text-link,
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-content,
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-link
+{
+}
+
+/* normal selected tabs */
+.AFTabAboveStartSelectedBackground:alias:ltr
+{
+} 
+.AFTabAboveStartSelectedBackground:alias:rtl
+{
+}
+.AFTabAboveMiddleSelectedBackground:alias
+{
+}
+.AFTabAboveEndSelectedBackground:alias:ltr
+{
+} 
+.AFTabAboveEndSelectedBackground:alias:rtl
+{
+}
+af|panelTabbed::tab:selected af|panelTabbed::tab-content,
+af|panelTabbed::tab:selected af|panelTabbed::tab-text-link,
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-content,
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-link
+{
+}
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-content,
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-text-link,
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-content,
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-link
+{
+}
+
+/* normal content */
+af|panelTabbed::header-start
+{
+}
+af|panelTabbed::header-center
+{
+}
+af|panelTabbed::header-end
+{
+}
+af|panelTabbed::body-start
+{
+}
+af|panelTabbed::body
+{
+}
+af|panelTabbed::body-end
+{
+}
+af|panelTabbed::footer-start
+{
+}
+af|panelTabbed::footer-center
+{
+}
+af|panelTabbed::footer-end
+{
+}
+
+/* normal content rtl */
+af|panelTabbed::header-start:rtl
+{
+}
+af|panelTabbed::header-end:rtl
+{
+}
+af|panelTabbed::body-start:rtl
+{
+}
+af|panelTabbed::body-end:rtl
+{
+}
+af|panelTabbed::footer-start:rtl
+{
+}
+af|panelTabbed::footer-end:rtl
+{
+}
+
+
+/**
+ * Level 1 (medium) tabs.
+ *
+ * Specify the background images for each of the following aliases,
+ * plus a font and color for the tab text.
+ *
+ */
+
+/* level 1 unselected tabs */
+.AFTabAboveStartUnselectedLevel1Background:alias
+{
+}
+.AFTabAboveStartUnselectedLevel1Background:alias:rtl
+{
+}
+.AFTabAboveMiddleUnselectedLevel1Background:alias
+{
+}
+.AFTabAboveEndUnselectedLevel1Background:alias
+{
+}
+.AFTabAboveEndUnselectedLevel1Background:alias:rtl
+{
+}
+af|panelTabbed::tab af|panelTabbed::tab-content[theme="dark"],
+af|panelTabbed::tab af|panelTabbed::tab-text-link[theme="dark"],
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-link[theme="medium"],
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-content[theme="medium"]
+{
+}
+af|panelTabbed::tab:hover af|panelTabbed::tab-content[theme="dark"],
+af|panelTabbed::tab:hover af|panelTabbed::tab-text-link[theme="dark"],
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-link[theme="medium"],
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-content[theme="medium"]
+{
+}
+
+/* level 1 selected tabs */
+.AFTabAboveStartSelectedLevel1Background:alias
+{
+}
+.AFTabAboveStartSelectedLevel1Background:alias:rtl
+{ 
+}
+.AFTabAboveMiddleSelectedLevel1Background:alias
+{
+}
+.AFTabAboveEndSelectedLevel1Background:alias
+{
+}
+.AFTabAboveEndSelectedLevel1Background:alias:rtl
+{ 
+}
+af|panelTabbed::tab:selected af|panelTabbed::tab-content[theme="dark"],
+af|panelTabbed::tab:selected af|panelTabbed::tab-text-link[theme="dark"],
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-content[theme="dark"],
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-text-link[theme="dark"],
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-content[theme="medium"],
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-link[theme="medium"],
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-content[theme="medium"],
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-link[theme="medium"]
+{
+}
+
+/* level 1 content -- also used for "medium" decorativeBoxes */
+af|panelTabbed::header-start[theme="dark"],
+af|decorativeBox::top-start[theme="medium"]
+{
+}
+af|panelTabbed::header-center[theme="dark"],
+af|decorativeBox::top[theme="medium"]
+{
+}
+af|panelTabbed::header-end[theme="dark"],
+af|decorativeBox::top-end[theme="medium"]
+{
+}
+af|panelTabbed::body-start[theme="dark"],
+af|decorativeBox::start[theme="medium"]
+{
+}
+af|panelTabbed::body[theme="dark"],
+af|decorativeBox::center[theme="medium"]
+{
+}
+af|panelTabbed::body-end[theme="dark"],
+af|decorativeBox::end[theme="medium"]
+{
+}
+af|panelTabbed::footer-start[theme="dark"],
+af|decorativeBox::bottom-start[theme="medium"]
+{
+}
+af|panelTabbed::footer-center[theme="dark"],
+af|decorativeBox::bottom[theme="medium"]
+{
+}
+af|panelTabbed::footer-end[theme="dark"],
+af|decorativeBox::bottom-end[theme="medium"]
+{
+}
+
+/* rtl */
+af|panelTabbed::header-start[theme="dark"]:rtl,
+af|decorativeBox::top-start[theme="medium"]:rtl
+{
+}
+af|panelTabbed::header-end[theme="dark"]:rtl,
+af|decorativeBox::top-end[theme="medium"]:rtl
+{
+}
+af|panelTabbed::body-start[theme="dark"]:rtl,
+af|decorativeBox::start[theme="medium"]:rtl
+{
+}
+af|panelTabbed::body-end[theme="dark"]:rtl,
+af|decorativeBox::end[theme="medium"]:rtl
+{
+}
+af|panelTabbed::footer-start[theme="dark"]:rtl,
+af|decorativeBox::bottom-start[theme="medium"]:rtl
+{
+}
+af|panelTabbed::footer-end[theme="dark"]:rtl,
+af|decorativeBox::bottom-end[theme="medium"]:rtl
+{
+}
+
+
+/**
+ * Level 2 (light) tabs.
+ *
+ * Specify the background images for each of the following aliases,
+ * plus a font and color for the tab text.
+ *
+ */
+
+/* level 2 unselected tabs */
+.AFTabAboveStartUnselectedLevel2Background:alias
+{
+}
+.AFTabAboveStartUnselectedLevel2Background:alias:rtl
+{
+}
+.AFTabAboveMiddleUnselectedLevel2Background:alias
+{
+}
+.AFTabAboveEndUnselectedLevel2Background:alias
+{
+}
+.AFTabAboveEndUnselectedLevel2Background:alias:rtl
+{
+}
+af|panelTabbed::tab af|panelTabbed::tab-content[theme="medium"],
+af|panelTabbed::tab af|panelTabbed::tab-text-link[theme="medium"],
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-link[theme="light"],
+af|navigationPane-tabs::tab af|navigationPane-tabs::tab-content[theme="light"]
+{
+}
+af|panelTabbed::tab:hover af|panelTabbed::tab-content[theme="medium"],
+af|panelTabbed::tab:hover af|panelTabbed::tab-text-link[theme="medium"],
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-link[theme="light"],
+af|navigationPane-tabs::tab:hover af|navigationPane-tabs::tab-content[theme="light"]
+{
+}
+
+/* level 2 selected tabs */
+.AFTabAboveStartSelectedLevel2Background:alias
+{
+}
+.AFTabAboveStartSelectedLevel2Background:alias:rtl
+{ 
+}
+.AFTabAboveMiddleSelectedLevel2Background:alias
+{
+}
+.AFTabAboveEndSelectedLevel2Background:alias
+{
+}
+.AFTabAboveEndSelectedLevel2Background:alias:rtl
+{ 
+}
+af|panelTabbed::tab:selected af|panelTabbed::tab-content[theme="medium"],
+af|panelTabbed::tab:selected af|panelTabbed::tab-text-link[theme="medium"],
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-content[theme="medium"],
+af|panelTabbed::tab:selected:hover af|panelTabbed::tab-text-link[theme="medium"],
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-content[theme="light"],
+af|navigationPane-tabs::tab:selected af|navigationPane-tabs::tab-link[theme="light"],
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-content[theme="light"],
+af|navigationPane-tabs::tab:selected:hover af|navigationPane-tabs::tab-link[theme="light"]
+{
+}
+
+/* level 2 content -- also used for "light" decorativeBoxes */
+af|panelTabbed::header-start[theme="medium"],
+af|decorativeBox::top-start[theme="light"]
+{
+}
+af|panelTabbed::header-center[theme="medium"],
+af|decorativeBox::top[theme="light"]
+{
+}
+af|panelTabbed::header-end[theme="medium"],
+af|decorativeBox::top-end[theme="light"]
+{
+}
+af|panelTabbed::body-start[theme="medium"],
+af|decorativeBox::start[theme="light"]
+{
+}
+af|panelTabbed::body[theme="medium"],
+af|decorativeBox::center[theme="light"]
+{
+}
+af|panelTabbed::body-end[theme="medium"],
+af|decorativeBox::end[theme="light"]
+{
+}
+af|panelTabbed::footer-start[theme="medium"],
+af|decorativeBox::bottom-start[theme="light"]
+{
+}
+af|panelTabbed::footer-center[theme="medium"],
+af|decorativeBox::bottom[theme="light"]
+{
+}
+af|panelTabbed::footer-end[theme="medium"],
+af|decorativeBox::bottom-end[theme="light"]
+{
+}
+
+/* rtl */
+af|panelTabbed::header-start[theme="medium"]:rtl,
+af|decorativeBox::top-start[theme="light"]:rtl
+{
+}
+af|panelTabbed::header-end[theme="medium"]:rtl,
+af|decorativeBox::top-end[theme="light"]:rtl
+{
+}
+af|panelTabbed::body-start[theme="medium"]:rtl,
+af|decorativeBox::start[theme="light"]:rtl
+{
+}
+af|panelTabbed::body-end[theme="medium"]:rtl,
+af|decorativeBox::end[theme="light"]:rtl
+{
+}
+af|panelTabbed::footer-start[theme="medium"]:rtl,
+af|decorativeBox::bottom-start[theme="light"]:rtl
+{
+}
+af|panelTabbed::footer-end[theme="medium"]:rtl,
+af|decorativeBox::bottom-end[theme="light"]:rtl
+{
+}

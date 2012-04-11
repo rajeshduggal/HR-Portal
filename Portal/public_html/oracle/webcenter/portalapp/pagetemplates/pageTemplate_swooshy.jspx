@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:pe="http://xmlns.oracle.com/adf/pageeditor"
+          xmlns:cust="http://xmlns.oracle.com/adf/faces/customizable"
+          xmlns:c="http://java.sun.com/jsp/jstl/core">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <af:pageTemplateDef var="attrs">
+    <af:panelGroupLayout id="pt_root" layout="scroll">
+      <!-- centered vertical stack: banner, navbar, content, footer -->
+      <af:panelGroupLayout id="pt_pgl2" layout="vertical"
+                           inlineStyle="width:#{attrs.contentWidth};margin: 0 auto;">
+        <!-- (1) banner, overall layout -->
+        <af:panelBorderLayout id="pt_pgl1"
+                              rendered="#{!composerContext.inEditMode or attrs.isEditingTemplate}"
+                              inlineStyle='background-image:url(#{facesContext.externalContext.requestContextPath}/images/swooshy.png);'>
+          <!-- (2)-1 logo (Custom Text, Tag Line) -->
+          <cust:panelCustomizable id="pt_pc2" layout="horizontal"
+                                  inlineStyle="border-style:none;">
+            <af:group id="pt_g2">
+              <p>
+                <af:goLink text="Your Company" id="pt_ot4" destination="/"
+                           inlineStyle="font-size:x-large; color:White;"/>
+              </p>
+              <p>
+                <af:outputText value=" Tag Line for Your Company" id="pt_ot6"
+                               inlineStyle="color:#558ff9; font-style:italic; font-size:small;"/>
+              </p>
+            </af:group>
+          </cust:panelCustomizable>
+          <!-- (2)-2 global links (Welcome Message, Administration Link, Login/Logout -->
+          <f:facet name="end">
+            <cust:panelCustomizable layout="vertical" id="pt_pgl16" halign="end"
+                                    inlineStyle="padding:6px 8px">
+              <!-- Global links -->
+              <af:panelGroupLayout id="pt_pgl11"
+                                   inlineStyle="white-space:nowrap">
+                <f:facet name="separator">
+                  <af:panelGroupLayout id="pt_pgl17">
+                    <af:spacer id="pt_spb" width="5px"/>
+                    <af:outputText value="|" id="pt_bar1"
+                                   inlineStyle="color:White;"/>
+                    <af:spacer id="pt_spa" width="5px"/>
+                  </af:panelGroupLayout>
+                </f:facet>
+                <!-- 1) Username -->
+                <af:outputText id="pt_ot1"
+                               value="Welcome #{securityContext.userName}"
+                               inlineStyle="color:White; font-size:small;"
+                               rendered="#{attrs.showGreetings}"/>
+                <!-- 2a) Admin link -->
+                <af:goLink id="pt_glnk1" text="Administration"
+                           destination="/admin"
+                           rendered="#{attrs.showAdmin and !attrs.isAdminPage}"
+                           inlineStyle="font-size:small; color:White;"/>
+                <!-- 2b) Back to Portal link -->
+                <af:goLink id="pt_glnk2" text="Back To Portal" destination="/"
+                           rendered="#{attrs.showAdmin and attrs.isAdminPage}"
+                           inlineStyle="font-size:small; color:White;"/>
+                <!-- 3) Logout link -->
+                <af:commandLink id="pt_glnk4" text="Logout"
+                                action="#{o_w_s_l_LoginBackingBean.doLogout}"
+                                rendered="#{securityContext.authenticated}"
+                                inlineStyle="font-size:small; color:White;"/>
+              </af:panelGroupLayout>
+              <!-- Login form -->
+              <af:subform id="pt_sf1" defaultCommand="pt_logincb"
+                          rendered="#{attrs.showLogin and !securityContext.authenticated}">
+                <af:panelFormLayout id="pt_pfl1">
+                  <af:panelLabelAndMessage id="pt_plam1" label="User Name"
+                                           styleClass="NoLabelWrap"
+                                           labelStyle="font-size:small;color:white;">
+                    <af:inputText id="pt_it1" simple="true"
+                                  value="#{o_w_s_l_LoginBackingBean.userName}"
+                                  columns="15"/>
+                  </af:panelLabelAndMessage>
+                  <af:panelLabelAndMessage id="pt_plam2" label="Password"
+                                           styleClass="NoLabelWrap"
+                                           labelStyle="font-size:small;color:white;">
+                    <af:inputText id="pt_it2" simple="true"
+                                  value="#{o_w_s_l_LoginBackingBean.password}"
+                                  columns="15" secret="true"/>
+                  </af:panelLabelAndMessage>
+                </af:panelFormLayout>
+                <af:spacer width="3" height="3" id="pt_s2"/>
+                <af:panelGroupLayout id="pt_pgl14" layout="horizontal"
+                                     halign="end">
+                  <af:commandLink id="pt_logincb" text="Login"
+                                  action="#{o_w_s_l_LoginBackingBean.doLogin}"
+                                  inlineStyle="font-size:small;color:white;"/>
+                  <af:spacer id="pt_s3" width="5px"/>
+                </af:panelGroupLayout>
+              </af:subform>
+            </cust:panelCustomizable>
+          </f:facet>
+        </af:panelBorderLayout>
+        <!-- (3) navbar (Home node, Page Hierarchy Nodes, Sub-level Nodes etc -->
+        <cust:panelCustomizable id="pt_pc4"
+                                inlineStyle="background-image:url(#{facesContext.externalContext.requestContextPath}/images/swooshy_tab-bkg.png);background-position:center top;background-repeat:repeat-x;padding-top:2px;"
+                                rendered="#{!composerContext.inEditMode and attrs.showNavigation and !attrs.isEditingTemplate}">
+          <af:panelGroupLayout id="pt_pgl3" layout="horizontal"
+                               inlineStyle="height:20px;">
+            <af:spacer id="pt_sp3" width="10"/>
+            <!-- iterate over navigation items -->
+            <af:forEach var="node" varStatus="vs"
+                        items="#{navigationContext.defaultNavigationModel.listModel['startNode=/, includeStartNode=false']}">
+              <af:subform id="pt_sfm1">
+                <af:switcher id="pt_sw1"
+                             facetName="#{(empty node.attributes['Target']) || (node.attributes['Target'] == '_popup') ? 'command' : 'golink'}">
+                  <f:facet name="command">
+                    <af:commandLink id="pt_cl1" text="#{node.title}"
+                                    inlineStyle="font-size:small;#{node.selected ? 'font-weight:bold;' : ''}"
+                                    action="pprnav"
+                                    disabled="#{not node.navigable}"
+                                    actionListener="#{navigationContext.processAction}"
+                                    clientComponent="#{node.attributes['Target'] == '_popup' ? true : false}">
+                      <!-- pass node to processAction for setting current selection and navigation  -->
+                      <f:attribute name="node" value="#{node}"/>
+                      <af:showPopupBehavior popupId="menuPopup"
+                                            align="afterStart"
+                                            triggerType="mouseOver"/>
+                      <c:if test="${node.attributes['Target'] == '_popup'}">
+                        <af:clientAttribute name="modelPath"
+                                            value="#{node.navigationModel.metadataId}"/>
+                        <af:clientAttribute name="selectedPrettyUrl"
+                                            value="#{node.prettyUrl}"/>
+                        <af:clientAttribute name="selectedTitle"
+                                            value="#{node.title}"/>
+                        <af:showPopupBehavior popupId="::rendererPopup"
+                                              triggerType="action"/>
+                      </c:if>
+                    </af:commandLink>
+                  </f:facet>
+                  <f:facet name="golink">
+                    <af:goLink id="pt_gl1" text="#{node.title}"
+                               destination="#{node.goLinkPrettyUrl}"
+                               targetFrame="#{node.attributes['Target']}"
+                               inlineStyle="font-size:small;#{node.selected ? 'font-weight:bold;' : ''}">
+                      <af:showPopupBehavior popupId="menuPopup"
+                                            align="afterStart"
+                                            triggerType="mouseOver"/>
+                    </af:goLink>
+                  </f:facet>
+                </af:switcher>
+                <af:spacer id="pt_sp9" width="20" rendered="#{! vs.last}"/>
+                <af:popup id="menuPopup" contentDelivery="immediate"
+                          animate="false" rendered="#{! empty node.children}">
+                  <af:panelGroupLayout id="pt_pgl7" layout="vertical">
+                    <af:forEach var="node2" varStatus="vs2"
+                                items="#{node.children}">
+                      <af:spacer id="pt_sp10" height="5px"/>
+                      <af:switcher id="pt_sw2"
+                                   facetName="#{(empty node2.attributes['Target']) || (node2.attributes['Target'] == '_popup') ? 'command' : 'golink'}">
+                        <f:facet name="command">
+                          <af:commandLink id="pt_cl2" text="#{node2.title}"
+                                          inlineStyle="#{node2.selected ? 'font-weight:bold;' : ''}"
+                                          action="pprnav"
+                                          disabled="#{not node2.navigable}"
+                                          actionListener="#{navigationContext.processAction}"
+                                          clientComponent="#{node2.attributes['Target'] == '_popup' ? true : false}">
+                            <!-- pass node to processAction for setting current selection and navigation  -->
+                            <f:attribute name="node" value="#{node2}"/>
+                            <c:if test="${node2.attributes['Target'] == '_popup'}">
+                              <af:clientAttribute name="modelPath"
+                                                  value="#{node2.navigationModel.metadataId}"/>
+                              <af:clientAttribute name="selectedPrettyUrl"
+                                                  value="#{node2.prettyUrl}"/>
+                              <af:clientAttribute name="selectedTitle"
+                                                  value="#{node2.title}"/>
+                              <af:showPopupBehavior popupId="::rendererPopup"
+                                                    triggerType="action"/>
+                            </c:if>
+                          </af:commandLink>
+                        </f:facet>
+                        <f:facet name="golink">
+                          <af:goLink id="pt_gl2" text="#{node2.title}"
+                                     destination="#{node2.goLinkPrettyUrl}"
+                                     targetFrame="#{node2.attributes['Target']}"
+                                     inlineStyle="font-size:small;#{node2.selected ? 'font-weight:bold;' : ''}"/>
+                        </f:facet>
+                      </af:switcher>
+                    </af:forEach>
+                  </af:panelGroupLayout>
+                </af:popup>
+              </af:subform>
+            </af:forEach>
+          </af:panelGroupLayout>
+        </cust:panelCustomizable>
+        <af:popup id="rendererPopup" contentDelivery="lazyUncached"
+                  launcherVar="source" eventContext="launcher">
+          <af:setPropertyListener from="#{source.attributes.modelPath}"
+                                  to="#{viewScope.modelPath}"
+                                  type="popupFetch"/>
+          <af:setPropertyListener from="#{source.attributes.selectedPrettyUrl}"
+                                  to="#{viewScope.selectedPrettyUrl}"
+                                  type="popupFetch"/>
+          <af:setPropertyListener from="#{source.attributes.selectedTitle}"
+                                  to="#{viewScope.selectedTitle}"
+                                  type="popupFetch"/>
+          <af:dialog id="pt_d1" title="#{viewScope.selectedTitle}" type="cancel"
+                     cancelTextAndAccessKey="Close">
+            <af:region value="#{bindings.navigationrenderer1.regionModel}"
+                       id="pt_r1"/>
+          </af:dialog>
+        </af:popup>
+        <!-- (4) content -->
+        <af:facetRef facetName="content"/>
+        <!-- (5) footer -->
+        <af:panelGroupLayout id="pt_pgl15" layout="vertical"
+                             rendered="#{!composerContext.inEditMode or facesContext.viewRoot.viewId == '/oracle/webcenter/siteresources/scopedMD/s8bba98ff_4cbb_40b8_beee_296c916a23ed/siteTemplate/gsr395559d2_16dc_4c21_89f8_f62c184d3bbc/Container.jspx'}">
+          <af:spacer id="pt_sp8" height="3px"/>
+          <af:outputText id="pt_ot5"
+                         value="Copyright 2010 - Oracle and/or its affiliates. All rights reserved."/>
+        </af:panelGroupLayout>
+      </af:panelGroupLayout>
+    </af:panelGroupLayout>
+    <af:xmlContent>
+      <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+        <display-name>Swooshy Page Template</display-name>
+        <facet>
+          <description>Facet for content</description>
+          <facet-name>content</facet-name>
+        </facet>
+        <attribute>
+          <attribute-name>contentWidth</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+          <default-value>960px</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>showNavigation</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{true}</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>showGreetings</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{securityContext.authenticated}</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>showLogin</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{true}</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>showAdmin</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{securityContext.authenticated}</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>isAdminPage</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{false}</default-value>
+        </attribute>
+        <attribute>
+          <attribute-name>isEditingTemplate</attribute-name>
+          <attribute-class>java.lang.Boolean</attribute-class>
+          <default-value>#{false}</default-value>
+        </attribute>
+      </component>
+    </af:xmlContent>
+  </af:pageTemplateDef>
+</jsp:root>

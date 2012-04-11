@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+<navigationDefinition description="Default Navigation" 
+               id="default-navigation-model"
+               name="Default Navigation"
+               xmlns="http://xmlns.oracle.com/adf/rcs/catalog" visible="#{true}">
+  <contents>
+    <customFolder id="pages" factoryClass="oracle.webcenter.page.view.rc.PageServiceContextFactory"
+                  visible="true" insertFolderContents="true">
+      <attributes>
+        <attribute value="Page Hierarchy" attributeId="Title" isKey="false"/>
+        <attribute value="/adf/webcenter/pagegroup_qualifier.png" attributeId="IconURI"/>
+      </attributes>
+      <parameters>
+        <parameter id="path">/oracle/webcenter/portalapp/pagehierarchy/pages.xml</parameter>
+      </parameters>
+    </customFolder>
+  </contents>
+  <schema resourceBundle="oracle.adf.rc.attribute.nls.AttributeBundle">
+    <descriptor multivalue="false" shortLabelKey="TITLE.SHORT_PROMPT_KEY"
+                labelKey="TITLE.PROMPT_KEY" attributeId="Title"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="ACCESS_KEY.SHORT_PROMPT_KEY"
+                labelKey="ACCESS_KEY.PROMPT_KEY" attributeId="AccessKey"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="DESCRIPTION.SHORT_PROMPT_KEY"
+                labelKey="DESCRIPTION.PROMPT_KEY" attributeId="Description"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="ICON_URI.SHORT_PROMPT_KEY"
+                labelKey="ICON_URI.PROMPT_KEY" attributeId="IconURI"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="true" shortLabelKey="SUBJECT.SHORT_PROMPT_KEY"
+                labelKey="SUBJECT.PROMPT_KEY" attributeId="Subject"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false"
+                shortLabelKey="REDIRECT_FLAG.SHORT_PROMPT_KEY"
+                labelKey="REDIRECT_FLAG.PROMPT_KEY" attributeId="Redirect"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="TARGET_FRAME.SHORT_PROMPT_KEY"
+                labelKey="TARGET_FRAME.PROMPT_KEY" attributeId="Target"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="TOOL_TIP.SHORT_PROMPT_KEY"
+                labelKey="TOOL_TIP.PROMPT_KEY" attributeId="ToolTip"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="MODIFIED.SHORT_PROMPT_KEY"
+                labelKey="MODIFIED.PROMPT_KEY" attributeId="Modified"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false"
+                shortLabelKey="CHANGE_FREQUENCY.SHORT_PROMPT_KEY"
+                labelKey="CHANGE_FREQUENCY.PROMPT_KEY"
+                attributeId="ChangeFrequency" searchable="true"
+                endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="SIGNIFICANCE.SHORT_PROMPT_KEY"
+                labelKey="SIGNIFICANCE.PROMPT_KEY" attributeId="Significance"
+                searchable="true" endUserVisible="true"/>
+    <descriptor multivalue="false" shortLabelKey="EXTERNAL_ID"
+                labelKey="EXTERNAL_ID" attributeId="ExternalId"
+                searchable="true" endUserVisible="true"
+                resourceBundle="oracle.webcenter.navigationeditor.view.resource.NavigationEditorBundle"/>
+  </schema>
+</navigationDefinition>
