@@ -19,6 +19,7 @@
       <value n="oracle.webcenter.internal.dt.migration.WebCenterWorkspaceMigrator" v="11.1.1.4.0.101019.0800"/>
    </hash>
    <list n="listOfChildren">
+      <hash><url n="URL" path="Model/Model.jpr"/></hash>
       <hash><url n="URL" path="Portal/Portal.jpr"/></hash>
       <hash><url n="URL" path="PortalWebAssets/PortalWebAssets.jpr"/></hash>
    </list>

@@ -3,6 +3,13 @@
     <jazn-realm default="jazn.com">
         <realm>
             <name>jazn.com</name>
+            <users>
+                <user>
+                    <name>bctester</name>
+                    <display-name>bctester</display-name>
+                    <credentials>{903}6AbEuTbyy0qFHC9kPctoVT9tx/WzgWlA</credentials>
+                </user>
+            </users>
         </realm>
     </jazn-realm>
     <policy-store>
