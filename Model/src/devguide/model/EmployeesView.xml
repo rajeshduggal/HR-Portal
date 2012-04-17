@@ -25,6 +25,28 @@
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access|VarAccess"/>
   </DesignTime>
+  <ViewAccessor
+    Name="JobsView1"
+    ViewObjectName="devguide.model.JobsView"
+    RowLevelBinds="true"/>
+  <ListBinding
+    Name="LOV_JobId"
+    ListVOName="JobsView1"
+    ListRangeSize="10"
+    NullValueFlag="none"
+    NullValueId="LOV_JobId_LOVUIHints_NullValueId"
+    MRUCount="0">
+    <AttrArray Name="AttrNames">
+      <Item Value="JobId"/>
+    </AttrArray>
+    <AttrArray Name="ListAttrNames">
+      <Item Value="JobId"/>
+    </AttrArray>
+    <AttrArray Name="ListDisplayAttrNames">
+      <Item Value="JobTitle"/>
+    </AttrArray>
+    <DisplayCriteria/>
+  </ListBinding>
   <EntityUsage
     Name="Employees"
     Entity="devguide.model.Employees"/>
@@ -75,7 +97,15 @@
     PrecisionRule="true"
     EntityAttrName="JobId"
     EntityUsage="Employees"
-    AliasName="JOB_ID"/>
+    AliasName="JOB_ID"
+    LOVName="LOV_JobId">
+    <Properties>
+      <SchemaBasedProperties>
+        <CONTROLTYPE
+          Value="combo_lov"/>
+      </SchemaBasedProperties>
+    </Properties>
+  </ViewAttribute>
   <ViewAttribute
     Name="Salary"
     PrecisionRule="true"

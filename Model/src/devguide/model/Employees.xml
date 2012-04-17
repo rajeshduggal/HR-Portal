@@ -10,7 +10,8 @@
   DBObjectName="EMPLOYEES"
   AliasName="Employees"
   BindingStyle="OracleName"
-  UseGlueCode="false">
+  UseGlueCode="false"
+  xmlns:validation="http://xmlns.oracle.com/adfm/validation">
   <DesignTime>
     <Attr Name="_codeGenFlag2" Value="Access"/>
     <AttrArray Name="_publishEvents"/>
@@ -89,9 +90,20 @@
     Type="oracle.jbo.domain.Date"
     ColumnType="DATE"
     TableName="EMPLOYEES">
+    <TransientExpression><![CDATA[adf.currentDate]]></TransientExpression>
     <DesignTime>
       <Attr Name="_DisplaySize" Value="7"/>
     </DesignTime>
+    <Properties>
+      <SchemaBasedProperties>
+        <LABEL
+          ResId="devguide.model.Employees.HireDate_LABEL"/>
+        <FMT_FORMATTER
+          ResId="devguide.model.Employees.HireDate_FMT_FORMATTER"/>
+        <FMT_FORMAT
+          ResId="devguide.model.Employees.HireDate_FMT_FORMAT"/>
+      </SchemaBasedProperties>
+    </Properties>
   </Attribute>
   <Attribute
     Name="JobId"
@@ -118,6 +130,14 @@
     <DesignTime>
       <Attr Name="_DisplaySize" Value="10"/>
     </DesignTime>
+    <validation:RangeValidationBean
+      Name="Salary_Rule_0"
+      ResId="devguide.model.Employees.Salary_Rule_0"
+      OnAttribute="Salary"
+      OperandType="LITERAL"
+      Inverse="false"
+      MinValue="0"
+      MaxValue="70000"/>
   </Attribute>
   <Attribute
     Name="CommissionPct"
@@ -301,4 +321,8 @@
       <Item Value="devguide.model.Employees.ManagerId"/>
     </AttrArray>
   </Key>
+  <ResourceBundle>
+    <PropertiesBundle
+      PropertiesFile="model.ModelBundle"/>
+  </ResourceBundle>
 </Entity>
