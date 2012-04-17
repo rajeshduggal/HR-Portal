@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:pageTemplate viewId="/oracle/webcenter/portalapp/pagetemplates/otn-dev-days-template.jspx"
+                         value="#{bindings.pageTemplateBinding}" id="pt1">
+          <f:facet name="content">
+            <af:panelSplitter id="ps1">
+              <f:facet name="first">
+                <af:panelAccordion id="pa1">
+                  <af:showDetailItem text="Departments" id="sdi1"/>
+                </af:panelAccordion>
+              </f:facet>
+              <f:facet name="second">
+                <af:panelSplitter id="ps2" splitterPosition="123"
+                                  orientation="vertical">
+                  <f:facet name="first">
+                    <af:panelCollection id="pc1">
+                      <f:facet name="menus"/>
+                      <f:facet name="toolbar"/>
+                      <f:facet name="statusbar"/>
+                    </af:panelCollection>
+                  </f:facet>
+                  <f:facet name="second">
+                    <af:panelTabbed id="pt2">
+                      <af:showDetailItem text="Emp" id="sdi2"/>
+                      <af:showDetailItem text="Graph" id="sdi3"/>
+                    </af:panelTabbed>
+                  </f:facet>
+                </af:panelSplitter>
+              </f:facet>
+            </af:panelSplitter>
+          </f:facet>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

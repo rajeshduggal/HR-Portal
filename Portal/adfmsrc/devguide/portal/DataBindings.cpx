@@ -19,6 +19,8 @@
           usageId="portal_pageTemplate_swooshyPageDef"/>
     <page path="/oracle/webcenter/portalapp/pagetemplates/otn-dev-days-template.jspx"
           usageId="portal_otn_dev_days_templatePageDef"/>
+    <page path="/oracle/webcenter/portalapp/pages/Departments.jspx"
+          usageId="devguide_portal_DepartmentsPageDef"/>
   </pageMap>
   <definitionFactories>
     <factory nameSpace="http://xmlns.oracle.com/portlet/bindings"
@@ -43,6 +45,8 @@
           path="oracle.webcenter.portalapp.pagetemplates.pageTemplate_swooshyPageDef"/>
     <page id="portal_otn_dev_days_templatePageDef"
           path="oracle.webcenter.portalapp.pagetemplates.otn_dev_days_templatePageDef"/>
+    <page id="devguide_portal_DepartmentsPageDef"
+          path="oracle.webcenter.portalapp.pages.DepartmentsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages/>
 </Application>
